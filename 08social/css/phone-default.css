@@ -1,0 +1,186 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-----BODY -----*/
+body {
+	font-size: 16px;	
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400; /*also loaded 500*/
+	background-color:#F6F7FB;
+}
+
+
+
+#left {
+	
+}
+
+
+header {
+	background-image:url(../images/header-phone.jpg);
+	background-repeat: no-repeat;
+	height:176px;
+}
+
+header i{
+	color:#fff;
+}
+header h1 {}
+header h2 {}
+
+nav ul{
+	background:#E1E3E4;
+	width:96%;
+	margin:auto;
+	border-radius: 10px;
+	margin-top:5px;
+
+
+
+}
+
+
+nav {
+	
+text-align:center;
+font-size: 18px;
+
+padding-top:8px;
+padding-bottom:8px;
+}
+nav ul li {
+	border: solid 1px white;
+	padding:5px;
+
+	
+
+}
+nav ul li a {
+	color:black;
+}
+nav ul li a:hover {
+	cursor: pointer;
+}
+
+
+#container{
+	background:white;
+	
+	margin:auto;
+	max-width:1140px;
+}
+
+.content {
+	background:white;
+	margin:auto;
+	width:96%;
+
+}
+
+
+
+.row article h4{
+	background:gray;
+	border-radius: 3px;
+	padding:10px;
+	color:#fff;
+
+}
+
+.row article{
+	width:96%;
+	float:left;
+}
+
+footer {
+	clear: both;
+	
+	overflow: auto;
+	background:#6991AC;
+	
+	
+}
+
+div.decorative-wrap{
+	display:none;
+}
+
+#showPhoneNav{
+	background:#3C948B;
+	width:96%;
+	height:30px;
+	margin:auto;
+	font-size: 18px;
+	border-radius:25px;
+	padding-bottom:2px;
+
+
+}
+.decorative-div{
+	
+	height:2px;
+	background:black;
+	margin-bottom:10px;
+	margin-top:2px;
+	
+}
+
+.content .crafts-img{
+	border:solid 1px black;
+	width:100%;
+	margin-top:8px;
+}
+
+
+article img{
+	width:100%;
+	margin:10px;
+	margin-left:0;
+	float:left;
+}
+
+
+.row{
+	margin:auto;
+}
+
+footer i{
+	color:#fff;
+	margin-left:50px;
+
+}
+
+header ul li{
+	float:right;
+	margin:10px;
+}
+
+footer article{
+	float:left;
+	width:100%;
+	text-align: center;
+	padding-top:10px;
+	clear:both;
+	margin-top:10px;
+
+
+}
+
+footer article i{
+	float:left;
+}
+
+footer article ul li{
+	float:left;
+	
+}
+
+.content strong{
+	font-weight: 700;
+}
+
+
+

@@ -1,0 +1,88 @@
+
+<?php
+    ini_set('mysql,connection_timeout',300);
+    ini_set('default_socket_timeout',300);
+?>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("#input").on("change", function()
+    {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+ 
+        if (/image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+ 
+            reader.onloadend = function(){ // set image data as background of div
+                $("img").css({'background-image':"url("+this.result+")"});
+            }
+        }
+    });
+
+});
+</script>
+
+
+<style>
+#imagePreview {
+    width: 180px;
+    height: 180px;
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    display: inline-block;
+}
+#input{}
+img{background-position: center center; background-repeat: no-repeat; background-size:cover;}
+
+</style>
+</head>
+<body>
+    <?php
+            if(isset($_POST['submit'])){
+                if(getimagesize($_FILES['image']['tmp_name']) == FALSE){
+                    echo 'please select an image';
+                }
+                else{
+                    $image = addslashes($_FILES['image']['tmp_name']);
+                    $name = addslashes($FILES['image']['name']);
+                    $image = file_get_contents($image);
+                    $image = base64_encode($image);
+                }
+            }
+            function saveimage(){
+                $con=mysql_connect('localhost','root','');
+                mysql_select_db('pics',$con);
+                $qry="insert into images (name,image) values ("$name","$image")";
+                $result = mysql_query($qry,$con);
+                if($result)
+                {
+                    echo "<br/>Image uploaded";
+                }
+                else{
+                    echo 'image not uploaded';
+                }
+            }
+            displayimage();
+            function displayimage(){
+                $con=mysql_connect('localhost','root','');
+                mysql_select_db('pics',$con);
+                $qry='select * from images';
+                $result=mysql_query($qry,$con);
+                while($row = mysql_fetch_array($result)){
+                    echo '<img height="300" width="300" src="data:image;base64,'$row[2].'">';
+                }
+            }
+        ?>
+            
+    <form method="post" enctype="multipart/form-data" class="form">
+        <br>
+        <input type="file" name="image" id="input">
+        <br><br>
+        <input type="submit" name="submit" value="upload">
+    </form>
+</body>

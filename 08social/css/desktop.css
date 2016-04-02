@@ -1,0 +1,163 @@
+@media only screen and (min-width: 1141px) {
+
+	body {
+		margin:0px;
+
+	}
+
+ header{
+ 	background-image:url(../images/header-desktop.jpg);
+ 	height:400px;
+ 	background-position:center;
+ 	background-color:#0E0C0D;
+
+ }
+
+
+	
+
+	div.decorative-wrap{
+	display:none;
+	
+}
+
+	#container .content-wrap .content{
+		width:81.8%;
+		margin-left:18.1818%;
+		padding:15px;
+		margin-top:0;
+
+
+		
+	}
+
+	#container .content-wrap .middle{
+		background:#313131;
+	}
+
+
+
+
+
+	nav{
+		width:auto;
+		float:none;
+		height:35px;
+		margin-left:18.1918%;
+		margin-right:0px;
+
+
+
+	}
+
+	nav ul li{
+		background: none;
+		border:none;
+		float:left;
+		margin-top:5px;
+	}
+	nav ul li a{
+		
+	}
+
+	nav ul li a:hover{
+		color:red;
+	}
+	.content .crafts-img{
+	border:solid 1px black;
+	width:380px;
+	margin-top:8px;
+	
+	}
+
+	.decorative-div{
+		width:100%;
+		margin-left:0;
+	}
+
+	div.nav-wrap{
+		background:#00B393;
+
+	}
+	div.nav-wrap div.left{
+		width:91.666%;
+		background:#3CB5D0;
+
+	}
+	div.nav-wrap div.middle{
+		
+	}
+
+	.nav-wrap .content{
+		margin-left:18.1818;
+		width:100%;
+	}
+
+	footer{
+		margin-top:0px;
+		margin-left:18.1818%;
+		margin-right:95px;
+		width:81.8181%;
+	}
+
+	.content-wrap .left{
+		background:#67727A;
+	}
+
+	.content-wrap .middle{
+		background:green;
+		width:91.666%;
+	}
+
+	.footer-wrap{
+
+	}
+
+	.footer-wrap .left{
+		background:#B6D7B6;
+		
+		
+	}
+
+	.footer-wrap .middle{
+		width:91.666%;
+		background:#CC5734;
+	}
+
+	.p1{
+		display:block;
+		width:100%;
+	}
+	.p2{
+		float:left;
+		margin-right:10px;
+		width:31.333%;
+		margin-bottom:20px;
+		margin-top:20px;
+	}
+	.p3{
+
+	}
+
+	
+
+	nav ul li a:hover{
+		color:red;
+	}
+
+	article img{
+	width:100%;
+	
+	
+}
+
+.content{
+	height:1750px;
+}
+
+.row{
+	margin:auto;
+}
+
+
+} 

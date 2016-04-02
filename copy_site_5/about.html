@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="about.css">
+		<style>
+			
+			#about-text{
+				display:flex;
+				margin:auto;
+				
+				width:50%;
+				flex-wrap:wrap;
+			}
+			#about-text > h1{
+				width:100%;
+				
+			}
+			#p1{
+				order:1;
+				flex:0 0 300px;
+			}
+			#p2{
+				order:2;
+				flex: 0 0 300px;
+			}
+			#p-wrap{
+				flex-wrap:nowrap;
+
+			}
+			#bg-video{
+				position:absolute;
+				top:500px;
+				left:400px;
+				
+				
+				z-index: -100;
+
+			}
+
+		</style>
+		<script>
+			$(function(){
+				
+				function mouseOn(){
+					$('nav a').css({"font-weight":"bold","color":"rgba(89, 89, 89, 1)"});
+				}
+				function mouseOff(){
+					$('nav a').css({""});
+				}
+				$('nav li').hover(mouseOn(),mouseOff());
+			})
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="logo-and-nav">
+				<div id="logo">
+					<img src="https://static.wixstatic.com/media/4496d3_184832fd47aa55fb990835eb7c0ccb73.png/v1/fit/w_727,h_217,usm_0.50_1.20_0.00/4496d3_184832fd47aa55fb990835eb7c0ccb73.png">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="social.html">SOCIAL</a></li>
+						<li><a href="#">TEAM</a></li>
+						<li><a href="#">SPONSORS</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="about-text">
+				<h1>
+					ABOUT.
+				</h1>
+				<div id="p-wrap">
+					<p id="p1">
+						About: Stavanger Roller Derby Klubb- Oil city rollers
+						ble offisielt startet den 16 juli 2012. I dag er laget bestående av 34 medlemmer. Klubben drives av spillerene selv, for spillerene. ​​
+						​<br>
+						Vi spiller etter reglene til wftda (woman flat track derby assosiation) som er en av flere ulike regelverk innen rollerderby Roller Derby er den hurtigst voksende kvinnesporten i Europa
+					</p>
+					<p id="p2">
+						Om Roller Derby: Roller Derby er en fullkontakt
+						sport på rulleskøyter. Kampene, som kalles Bout foregår på en elipseformet bane, hvor to lag kjemper mot hverandre. En kamp består av to omganger som
+						er inndelt i mange jams. En jam varer i 2 min.
+						 <br>
+						Roller derby har ingen ball. Poeng skåres ved at jammeren for laget passerer motstansderens hofte. Motstanderen kalles blocker.
+					</p>
+				</div>
+			</div>
+			
+			
+			<div id="footer">
+				<h6>Webmaster Login</h6>
+				<p>© 2013 by OIL CITY ROLLERS. All rights reserved.</p>
+				<img src="https://static.wixstatic.com/media/8d2c2a4846503b9067e2fd2f590445c2.wix_mp/v1/fill/w_35,h_35,al_c,usm_0.50_1.20_0.00/8d2c2a4846503b9067e2fd2f590445c2.wix_mp">
+			</div>
+			
+		</div>
+
+
+	</body>
+</html>

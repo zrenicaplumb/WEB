@@ -1,0 +1,212 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+.clearfix:after{
+	content:"";
+	display:table;
+	clear:both;
+
+}
+.top-div{
+	background-color:#5DBCD8;
+}
+.logo-wrap{
+	width:60%;
+	display:block;
+	margin:auto;
+	padding-top:30px;
+	text-align: center;
+}
+
+#logo-text{
+	width:140px;
+	padding-left:10px;
+}
+
+.logo-wrap img{
+	
+	margin:auto;
+
+}
+
+#p1{
+	letter-spacing: 2px;
+	text-align: center;
+	color:#fff;
+	font-size:1.8em;
+	margin-top:40px;
+}
+
+.top-div p{
+	
+	text-align: center;
+	color:#fff;
+	line-height: 1.2em;
+	margin-top:40px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size: 1.2em;
+}
+
+#container{
+	
+	font-family: 'Droid Sans', sans-serif;
+	margin:auto;
+
+}
+
+#sign-up{
+	background-color:#5DBCD8;
+	border:#fff 4px solid;
+	border-radius: 9px;
+	width:200px;
+	height:50px;
+	display: block;
+	margin:auto;
+	color:#fff;
+	font-size:20px;
+	font-weight:100;
+	margin-top:40px;
+	cursor: pointer;
+}
+
+
+
+#phone-img img{
+	display:block;
+	margin:auto;
+	margin-top:50px;
+
+}
+
+.experience-div{
+	text-align: center;
+	padding-top:70px;
+	padding-bottom: 60px;
+}
+
+.experience-div p{
+	max-width:98%;
+	padding:2%;
+	margin:auto;
+	line-height: 1.4em;
+	color:gray;
+	margin-top:8px;
+}
+
+.experience-div strong{
+	font-weight: 700;
+	display:block;
+	padding-bottom:4px;
+}
+
+.experience-div h3{
+	font-size:2.3em;
+
+}
+
+.green-div{
+	background-color:#6FCF97;
+	color:#fff;
+	text-align: center;
+
+}
+
+#tablet-h4{
+	display:none;
+}
+
+.green-div h2{
+	font-size: 2.3em;
+	
+	margin-bottom:30px;
+	padding-top:30px;
+
+}
+
+.green-div img{
+	display: block;
+	margin:auto;
+	margin-bottom:40px;
+	width:200px;
+
+}
+
+.green-div h3{
+	font-size:1.4em;
+
+}
+
+.green-div p{
+	line-height: 1.2em;
+	padding-bottom:40px;
+}
+
+.bottom-div{
+text-align: center;
+
+
+}
+
+.bottom-div img{
+	
+	padding-top:80px;
+	padding-bottom:35px;
+}
+
+.bottom-div h4{
+	font-size:2em;
+	padding-bottom:10px;
+
+}
+
+.bottom-div p{
+	line-height: 1.3em;
+	color:#838383;
+	max-width: 300px;
+	margin:auto;
+}
+
+.bottom-div form input{
+	background-color:#DADADA;
+	width:90%;
+	border-radius: 8px;
+	height:40px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-indent: 5px;
+	max-width:450px;
+	
+
+	
+}
+
+.bottom-div h5{
+	color:#85CDE1;
+	font-size:2.2em;
+	margin-top:120px;
+	margin-bottom: 5px;
+}
+
+button#sign-me-up{
+	border:3px solid #85CDE1;
+	border-radius:8px;
+	background:#fff;
+	width:200px;
+	height:40px;
+	color:#85CDE1;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom:50px;
+	cursor: pointer;
+}
+
+
+

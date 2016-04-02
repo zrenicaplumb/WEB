@@ -1,0 +1,284 @@
+Fhtml {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+
+body{
+	
+
+	font-family: 'Lato', sans-serif;
+	.wrap{
+		background:url(../img/landscape2.jpg);
+		
+		background-repeat: no-repeat;
+		background-size:cover;
+		max-width: 1400px;
+		margin:auto;
+		
+		background-attachment: fixed;
+header{
+		
+		background:rgba(0,0,0,0.2);
+		padding:20px;
+		overflow: auto;
+		width: 100%;
+		text-align: center;
+		img{
+			margin-left:20px;
+			float:left;
+			width:130px;
+			
+			margin-top:10px;
+
+
+		}
+
+		nav{
+			
+			display: inline-block;
+			margin-right:150px;
+			margin-top:10px;
+			
+			
+			
+			ul{	
+				
+				padding-bottom:15px;
+				text-align: center;
+				li{
+					display: inline;
+					
+					margin:40px;
+
+
+
+
+					a{
+						text-decoration: none;
+						
+						font-size: 1.8em;
+						color:#fff;
+						text-shadow:0 0 6px black;
+						padding:10px;
+						
+						&:hover{
+							transition: color .25s;
+							color:$link-hover-color;
+							padding:10px;
+							
+						}
+						
+						
+					}
+				}
+			}
+		}
+	}
+
+		.content{
+			margin-top:100px;
+			margin-bottom:250px;
+			.greeting-text{
+			
+			color:#fff;
+			text-shadow:0 0 8px black;
+			font-size: 3.5em;
+			clear: both;
+			text-align: center;
+
+			p{
+				span{
+					font-size: 1.6em;
+				}
+			}
+		}
+
+		}
+		.work-div{
+			background:#fff;
+			padding:5px;
+			text-align: center;
+			
+			float: left;
+			padding-bottom:40px;
+			
+
+			h2{
+				font-size: 2em;
+				
+				padding-bottom:10px;
+				padding-top:30px;
+			}
+
+			.row{
+			
+				
+
+
+				img{
+					width:31%;
+				
+					margin:1%;
+					border:1px solid black;
+					
+					margin-top:50px;
+				}
+			}
+		}
+		.about-div{
+			
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			padding:10px;
+			clear:both;
+			
+			z-index: 10000;
+			
+
+			h2{
+				text-align: center;
+				color:#fff;
+				font-size: 2em;
+				margin-top:40px;
+				margin-bottom:40px;
+			}
+			
+			p{
+				color:#fff;
+				font-size:1.5em;
+				
+				
+				width:80%;
+				word-spacing: 2px;
+				margin:auto;
+				margin-top:20px;
+				margin-bottom: 20px;
+				padding-bottom:30px;
+			}
+		}
+
+		.bottom-div{
+			padding:50px;
+			text-align: center;
+			background:#fff;
+			
+			h2{
+				font-size:2.2em;
+				margin-bottom:30px;
+			}
+			.contact-boxes{
+				
+				input{
+					clear:both;
+					display: block;
+					margin:auto;
+					margin-top:10px;
+					margin-bottom:10px;
+					width:60%;
+					height:40px;
+					font-size: 1.5em;
+					text-indent: 5px;
+					
+
+					
+
+				}
+				textarea{
+					clear:both;
+					display: block;
+					margin:auto;
+					margin-top:10px;
+					margin-bottom:10px;
+					width:60%;
+					height:260px;
+					font-size: 1.5em;
+					text-indent: 5px;
+					
+					
+
+				}
+			}
+			
+		}
+		footer{
+			background: #fff;
+		   
+		   
+		    
+		    text-align: center;
+			.social-links{
+
+				margin-bottom:20px;
+				li{
+					display:inline-block;
+				}
+				img{
+					width:40px;
+					padding:10px;
+
+					
+					
+				}
+			
+			}
+		}
+		
+	}
+
+}
+
+#workbody{
+	.wrap{
+		header{
+			nav{
+				ul.mymenu{
+					li{
+						#work{
+							color:$link-hover-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#aboutbody{
+	.wrap{
+		header{
+			nav{
+				ul.mymenu{
+					li{
+						#about{
+							color:$link-hover-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#contactbody{
+	.wrap{
+		header{
+			nav{
+				ul.mymenu{
+					li{
+						#contact{
+							color:$link-hover-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	
+
+
+		
+
+

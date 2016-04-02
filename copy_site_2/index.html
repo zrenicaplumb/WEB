@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<style>
+			body{margin:0; font-family: 'HelveticaRegular',Helvetica,Arial;}
+			.wrap{background-image:url('landscape.jpg');  background-repeat:no-repeat; background-attachment:fixed; position:relative; text-shadow:0 0 6px black; padding-top:1px; padding-bottom:125px; min-height:800px; }
+			.top-bar{background:rgba(0,0,0,0.6); height:100px; position:relative; margin-top:60px; box-shadow:0 0 5px black;}
+			.logo{width:50px; height:50px; border-radius:50%; border:2px solid #fff; margin-left:auto; margin-right:none;}
+			.logo-wrap{width:8%; display:inline-block; vertical-align:middle;}
+			nav{padding-top:12px;}
+			ul{display:inline-block; width:85%; vertical-align: middle;}
+			ul li{display:inline-block; width:15%; border-right:1px solid #fff; text-align:center; vertical-align:middle;}
+			ul li a{text-decoration:none; color:#fff; opacity:1; font-weight:100;  font-family:'Open Sans',sans-serif; text-transform:uppercase; font-size:12px; height:20px; padding-top:6px; padding-bottom:4px; display:inline-block; width:100%;}
+			#no-border{border-right:none;}
+			ul li a:hover{color:#EFDD8D; transition:color 0.2s;}
+
+			.main-content{position:relative; margin-top:100px; margin-bottom:50px;}
+			.upper-bar{border-top:1px solid white; border-bottom:2px solid white; height:5px; width:800px; position:relative; margin:auto; margin-top:100px;}
+			.main-content p{color:#FFF; font-weight:100; position:relative; text-align:center; margin-top:40px; margin-bottom:0px; }
+			.main-content h1{color:#fff; font-size:90px; text-align:center; margin:10px; font-weight:500;}
+			.main-content h2{color:#fff; font-size:22px; text-align:center; font-weight:100; margin-top:0; margin-bottom:0; font-family: 'Times New Roman', times, serif;}
+			.lower-bar{border-top:2px solid white; border-bottom:1px solid white; height:5px; width:800px; position:relative; margin:auto; margin-top:70px;}
+			.cart{border:none; }
+			.cart img{width:45px;}
+			footer{width:100%; height:75px; position:absolute; background:rgba(0,0,0,0.6); box-shadow: 0 0 5px black; bottom:0px;}
+
+			.side-menu{position:fixed; top:0; right:-350px; width:350px; height:100%; background:#FFF; z-index:10000; box-shadow:0 0 5px black; display:block; transition: right 0.5s ease 0s; text-shadow:none;}
+			.menu-top-bar{position:absolute; width:100%; height:100px; background:black; top:0; text-align:center;}
+			#menu-top-text{color:white; position:relative; top:38px; font-size:22px;}
+			.menu-bottom-bar{position:absolute; bottom:0; width:100%; height:100px; border-top:1px solid #CACACA;  text-align:center;}
+			.view-cart{position:absolute; left:35px; bottom:30px; background:#E3623B; height:40px; width:280px; cursor:pointer; border-radius:2px;}
+			.view-cart:hover{background:#FF7E48; transition:background 0.3s;}
+			#view-cart-text{color:white; position:relative; top:12px;}
+			.menu-top-bar img{width:40px; position:absolute; left:20px; top:28px; cursor:pointer; transform:rotate(0);}
+			#bob{color:black; font-size: 20px; position:relative; top:130px; left:45px; font-size: 25px; font-family: 'times new Roman';}
+			#bill{color:black; position:absolute; left: 35px; bottom:130px; font-size:25px; font-family:'times new Roman';}
+			#total{color:black; position:absolute; right: 40px; bottom:130px; font-size:25px; font-family:'times new Roman';}
+			.paragraph{margin-left:50px; margin-right:50px;}
+			.close-arrow{}
+			.dimmer{background:rgba(0,0,0,0.6); width:100%; height:100%; position:fixed; top:0; left:0; z-index:1000; display:none; animation:fadein 1s;}
+			.about-div{background:rgba(0,0,0,0.6); width:980px; height:490px; border-radius:10px; box-shadow:0 0 10px black; display:none; position:absolute; left:50%; margin-left:-490px; text-shadow:none; font:normal normal normal 15px/1.3em 'Times New Roman',times,serif;}
+			.about-div p{color:white;}
+			.about-div h2{color:white;}
+			.about-gallery{padding-top:70px; display:inline-block; margin-left:2px; }
+			.about-img{position:float; height:200px; width:319px; border:2px solid transparent;}
+			
+			.about-div-content{margin-top:40px; margin-left:20px; margin-right:30px;}
+			#pic1:hover{border-bottom:2px solid green; border-top:2px solid green; transition:border 0.38s ease 0s;}
+			#pic2:hover{border-bottom:2px solid red; border-top:2px solid red; transition:border 0.38s ease 0s;}
+			#pic3:hover{border-bottom:2px solid blue; border-top:2px solid blue; transition:border 0.38s ease 0s;}
+			.home:active{}
+			.home-div{}
+			#home{color:#EFDD8D;}
+			.footer-logo-div{}
+			.footer-logo{width:45px; height: 45px; border:2px solid white; border-radius:50%; float:left; margin-left:4%; margin-top:14px;}
+			.footer-icons{margin-right:13px;}
+			.icon{float:right; margin-top:16px; margin-right:15px; cursor:pointer;}
+			#flickr-icon{margin-top:18px;}
+			.creatures-div{background:rgba(0,0,0,0.6); width:980px; height:1490px; border-radius:10px; box-shadow:0 0 10px black; display:none; position:absolute; left:50%; margin-left:-490px; text-shadow:none; font:normal normal normal 15px/1.3em 'Times New Roman',times,serif;}
+			.creatures-gallery{}
+			.creatures-top-text{margin:30px;}
+			.creatures-img{width:90%; height:505px; margin:auto; display:block; margin-bottom:20px; margin-top:40px; border-radius:10px; box-shadow:0 0 10px black;  opacity:0.65;}
+			.creatures-img:hover{opacity:1; transition:opacity 0.5s linear 0s;}
+			
+			.landscapes-div{background:rgba(0,0,0,0.6); width:980px; height:690px; border-radius:10px; box-shadow:0 0 10px black; display:none; position:absolute; left:50%; margin-left:-490px; text-shadow:none; font:normal normal normal 15px/1.3em 'Times New Roman',times,serif;}
+			.landscapes-div h2{margin-top:35px;}
+			.landscapes-div p{margin-left:25px; margin-right:25px;}
+			.landscapes-gallery-div{margin-left:30px; margin-top:20px; margin-right:30px;}
+			.landscapes-img{height:80px; border-radius:2px; cursor:pointer; opacity:0.85;}
+			.landscapes-img:hover{opacity:1;}
+			.close-button{float:right; margin:15px; cursor:pointer; }
+			.image-zoom{background:white; width:0px; height:0px; border-radius:3px; z-index:10000; margin:auto; margin-top:100px; }
+			#zoomed-img{}
+			
+
+
+			@media screen and (max-width:850px){
+				.wrap{background-image:url('kitten.jpg'); background-size:900px 500px;}
+			}
+			
+			
+		</style>
+		<script>
+			$(document).ready(function(){
+				$('nav a').click(function(){
+					if(this.id == 'home'){
+						$('nav a').css({'color':'#fff'});
+						this.style.color = '#EFDD8D';
+					
+
+					}else if(this.id != 'home'){
+						$('nav a').css({'color':'#fff'});
+						$('#home').css({'color':'#fff'});
+						this.style.color = '#EFDD8D';
+					}
+					
+				});
+				
+
+				
+
+				
+    			
+				$('.cart').click(function(){
+					$('.side-menu').css({'right':'0px'});
+					
+					$('.dimmer').show();
+				});
+
+				$('.close-arrow').click(function(){
+					$('.side-menu').css({'right':'-350px'});
+					
+					$('.dimmer').hide();
+					
+				});
+
+				$('.home').click(function(){
+					$('.about-div').hide();
+					$('.creatures-div').hide();
+					$('.wrap').css({'height':''});
+					$('footer').css({'top':''});
+					$('.home-div').fadeIn(400);
+					$('.paragraph').fadeIn(400);
+					$('.landscapes-div').hide();
+
+				});
+				
+
+				$('.about').click(function(){
+					$('.home-div').hide();
+					$('.paragraph').hide();
+					$('.creatures-div').hide();
+					$('.wrap').css({'height':'720px'})
+					
+					$('.about-div').fadeIn(400);
+					$('.landscapes-div').hide();
+
+
+					
+				});
+
+				$('.creatures').click(function(){
+					$('.home-div').hide();
+					$('.paragraph').hide();
+					$('.about-div').hide();
+					
+					
+					$('.wrap').css({'height':'2750px'});
+					
+					$('.creatures-div').css({'height':'2420px'});
+					$('.creatures-div').fadeIn(400);
+					$('.landscapes-div').hide();
+				});
+
+				
+
+				$('.landscapes').click(function(){
+					$('.home-div').hide();
+					$('.paragraph').hide();
+					$('.about-div').hide();
+					$('.wrap').css({'height':'1020px'});
+					$('.creatures-div').hide();
+					
+					
+					$('.landscapes-div').css({'height':''});
+					$('.landscapes-div').fadeIn(400);
+					
+
+					
+				});
+				$('.landscapes-img').on('mouseup',function(){
+					$('.dimmer').fadeIn(300);
+					$('.image-zoom').css({'width':'750px','height':'400px','transition':'width 0.5s'})
+					$('.close-button').css({'display':'block'});
+					
+
+				});
+
+
+				$('.close-button').click(function(){
+					$('.dimmer').hide();
+					$('.image-zoom').css({'width':'','height':'','transition':'width 0.6s'})
+					
+
+					
+				});
+
+				function swap(image){
+					$('#zoomed-img').src = image;
+				}
+
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="dimmer">
+				<img class="close-button" src="close.gif" width="30px" display="none" float="right">
+				<div class="image-zoom" style="background: landscape.jpg;">
+					<img id="zoomed-img" src="" width="50">
+					
+
+				</div>
+			</div>
+				
+				<div class="top-bar">
+
+					
+					<nav>
+						<div class="logo-wrap">
+							<div class="logo">
+							</div>
+						</div>
+						<ul>
+							<li class="home"><a href="#" id='home'>home</a></li>
+							<li><a href="#" class="about">about</a></li>
+							<li><a href="#" class="creatures">creatures</a></li>
+							<li><a href="#" class="landscapes">landscapes</a></li>
+							<li><a href="#" id="no-border">shop</a></li>
+							<li class="cart"><a href="#" ><img src="cart.png"></a></li>
+
+						</ul>
+					</nav>
+				</div>
+				<div class="side-menu">
+					<div class="menu-top-bar">
+						<img src="arrow.png" class="close-arrow">
+						<span id="menu-top-text">Cart</span>
+					</div>
+					<span id="bob">YOUR CART'S EMPTY.</span>
+					<span id='bill'>SUBTOTAL</span>
+					<span id='total'>$0.00</span>
+
+					<div class="menu-bottom-bar">
+						<div class="view-cart">
+							<span id="view-cart-text">VIEW CART</span>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="main-content">
+					<div class="home-div">
+						<div class="upper-bar">
+						</div>
+						<p>
+							<span id="span">FEBRUARY 19th, 2023</span>
+						</p>
+						<h1>BURRITO CONVENTION</h1>
+						<h2>THEY ARE PRETTY TASTY SOMETIMES</h2>
+						<div class="lower-bar">
+						</div>
+						
+						<p class="paragraph">
+							Ælfred kyning hateð gretan Wærferð biscep his wordum luflice & freondlice; & ðe cyðan hate ðæt me com swiðe oft on gemynd, hwelce wiotan iu wæron giond Angelcynn, ægðer ge godcundra hada ge woruldcundra; & hu gesæliglica tida ða wæron giond Angelcynn; & hu ða kyningas ðe ðone onwald hæfdon ðæs folces on ðam dagum Gode & his ærendwrecum hersumedon; & hie ægðer ge hiora sibbe ge hiora siodo ge hiora onweald innanbordes gehioldon, & eac ut hiora eðel gerymdon; & hu him ða speow ægðer ge mid wige ge mid wisdome; & eac ða godcundan hadas hu giorne hie wæron ægðer ge ymb lare ge ymb liornunga, ge ymb ealle ða ðiowotdomas ðe hie Gode don scoldon; & hu man utanbordes wisdom & lare hieder on lond sohte; & hu we hie nu sceoldon ute begietan gif we hie habban sceoldon. Swæ clæne hio wæs oðfeallenu on Angelcynne ðæt swiðe feawa wæron behionan Humbre ðe hiora ðeninga cuðen understondan on Englisc, oððe furðum an ærendgewrit of Lædene on Englisc areccean; & ic wene ðætte noht monige begiondan Humbre næren. Swæ feawa hiora wæron ðæt ic furðum anne anlepne ne mæg geðencean besuðan Temese ða ða ic to rice feng. Gode ælmihtegum sie ðonc ðætte we nu ænigne on stal habbað lareowa. & forðon ic ðe bebiode ðæt ðu do swæ ic geliefe ðæt ðu wille, ðæt ðu ðe ðissa woruldðinga to ðæm geæmetige swæ ðu oftost mæge, ðæt ðu ðone wisdom ðe ðe God sealde ðær ðær ðu hiene befæstan mæge, befæste. Geðenc hwelc witu us ða becomon for ðisse worulde, ða ða we hit nohwæðer ne selfe ne lufodon ne eac oðrum monnum ne lefdon: ðone naman anne we lufodon ðætte we Cristne wæren, & swiðe feawa ða ðeawas.
+							<br>
+							<br>
+
+							Æfter þan þe Augustinus to Engla lande becom, wæs sum æþele cyning, Oswold gehaten, on Norþhymbra lande, gelyfed swyþe on God.
+ 
+
+							Se ferde on his iugoþe fram his freondum and magum to Scotlande on sæ, and þær sona wearþ gefullod, and his geferan samod þe mid him siþedon. 
+
+							Betwux þam wearþ ofslagen Eadwine his eam, Norþhymbra cynincg, on Crist gelyfed, fram Brytta cyninge, Cedwalla geciged, and twegen his æftergengan binnan twam gearum; and se Cedwalla sloh and to sceame tucode þa Norþhymbran leode æfter heora hlafordes fylle oþ þæt Oswold se eadiga his yfelnysse adwæscte.
+							Æfter þan þe Augustinus to Engla lande becom, wæs sum æþele cyning, Oswold gehaten, on Norþhymbra lande, gelyfed swyþe on God.
+ 
+
+							Se ferde on his iugoþe fram his freondum and magum to Scotlande on sæ, and þær sona wearþ gefullod, and his geferan samod þe mid him siþedon. 
+
+							Betwux þam wearþ ofslagen Eadwine his eam, Norþhymbra cynincg, on Crist gelyfed, fram Brytta cyninge, Cedwalla geciged, and twegen his æftergengan binnan twam gearum; and se Cedwalla sloh and to sceame tucode þa Norþhymbran leode æfter heora hlafordes fylle oþ þæt Oswold se eadiga his yfelnysse adwæscte.
+
+						</p>
+					</div>	<!-- home div -->
+
+					<div class="about-div">
+						<div class="about-div-content">
+							<h2>Geðiode funden</h2>
+							<p>Ða gemunde ic hu sio æ wæs ærest on Ebrisc geðiode funden, & eft, ða hie Creacas geliornodon, ða wendon hie hie on hiora agen geðiode ealle, & eac ealle oðre bec. & eft Lædenware swæ same, siððan hie hie geliornodon, hie hie wendon ealla ðurh wise wealhstodas on hiora agen geðiode. Ond eac eall oðra Cristnæ ðioda summe dæl hiora on hiora agen geðiode wendon. Forðy me ðyncð betre, gif iow swæ ðyncð, ðæt we eac sumæ bec, ða ðe niedbeðearfosta sien eallum monnum to wiotonne, ðæt we ða on ðæt geðiode wenden ðe we ealle gecnawan mægen.
+
+							</p>
+						</div>
+						<div class="about-gallery">
+							<img src="pattern1.jpg" id="pic1" class="about-img">
+							<img src="pattern2.jpg" id="pic2" class="about-img">
+							<img src="pattern3.jpg" id="pic3" class="about-img">
+						</div>
+					</div><!-- about div -->
+
+					<div class="creatures-div">
+						<div class="creatures-top-text">
+							<h2>Creatures</h2>
+							<p>HWÆT, we gar-dena in geardagum, 
+								þeodcyninga þrym gefrunon, 
+								hu ða æþelingas ellen fremedon! 
+								oft Scyld Scefing sceaþena þreatum, 
+								monegum mægþum meodosetla ofteah, 
+								egsode eorlas, syððanærest wearð
+								feasceaft funden; he þæs frofre gebad,
+								weox under wolcnum weorðmyndum þah,
+								oð þæt him æghwylc ymbsittendra
+								ofer hronrade hyran scolde, 
+								gomban gyldan; þæt wæs god cyning! 
+								Ðæm eafera wæs æfter cenned 
+								geong in geardum, þone God sende 
+								folce to frofre; fyrenðearfe ongeat, 
+								þe hie ær drugon aldorlease 
+								lange hwile; him þæs Liffrea, 
+								wuldres Wealdend woroldare forgeaf, 
+								Beowulf wæs breme --- blæd wide sprang--- 
+								Scyldes eafera Scedelandum in. 
+								Swa sceal geong guma gode gewyrcean, 
+								fromum feohgiftumon fæder bearme
+						</div>
+						<div class="creatures-gallery">
+							<img src="creature1.jpg" class="creatures-img">
+							<img src="creature2.jpeg" class="creatures-img">
+							<img src="creature4.jpg" class="creatures-img">
+							<img src="creature3.jpg" class="creatures-img">
+						</div>
+						
+						
+
+					</div><!-- creatures div -->
+
+
+					<div class="landscapes-div">
+						<h2>Landscapes</h2>
+						<p>Æfter þan þe Augustinus to Engla lande becom, wæs sum æþele cyning, Oswold gehaten, on Norþhymbra lande, gelyfed swyþe on God.
+ 
+
+						Se ferde on his iugoþe fram his freondum and magum to Scotlande on sæ, and þær sona wearþ gefullod, and his geferan samod þe mid him siþedon. 
+
+						Betwux þam wearþ ofslagen Eadwine his eam, Norþhymbra cynincg, on Crist gelyfed, fram Brytta cyninge, Cedwalla geciged, and twegen his æftergengan binnan twam gearum; and se Cedwalla sloh and to sceame tucode þa Norþhymbran leode æfter heora hlafordes fylle oþ þæt Oswold se eadiga his yfelnysse adwæscte. </p>
+						<div class="landscapes-gallery-div">
+							<img src="landscape.jpg" class="landscapes-img" onclick="swap(landscape.jpg)">
+
+							<img src="landscape2.jpg" class="landscapes-img">
+							<img src="landscape3.png" class="landscapes-img">
+							<img src="landscape4.jpg" class="landscapes-img">
+							<img src="landscape5.gif" class="landscapes-img">
+							<img src="landscape6.gif" class="landscapes-img">
+							<img src="landscape7.jpg" class="landscapes-img">
+							<img src="landscape8.jpg" class="landscapes-img">
+							<img src="landscape9.jpg" class="landscapes-img">
+							<img src="landscape10.jpg" class="landscapes-img">
+							<img src="landscape11.jpg" class="landscapes-img">
+						</div>
+				   	</div><!-- landscapes div -->
+				</div>  
+				   	
+
+				<footer>
+					<div class="footer-logo-div">
+						<div class="footer-logo">
+						</div>
+					</div>
+					<div class="footer-icons">
+						<a href="https://www.flickr.com/"><img src='flickr.png' id="flickr-icon" class="icon" style="width:40px;"></a>
+						<a href="https://twitter.com/"><img src='twitter.png' class="icon" style="width:45px;"></a>
+						<a href="https://facebook.com/"><img src='facebook.png' class="icon" style="width:40px;"></a>
+					</div>
+				</footer>
+			</div>
+		
+	</body>
+</html>

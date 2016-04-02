@@ -1,0 +1,175 @@
+body{
+	font-family: 'Roboto Slab', serif;
+
+	.extender1{
+		text-decoration: none;
+		color:$black;
+	}
+
+	.extender2{
+		text-align:center;
+	}
+
+	nav{
+		font-family: $font;
+		background:$white-color;
+		border-top:1px solid $black;
+
+		ul{
+			width:100%;
+			@extend .extender2;
+			padding-top:1px;
+			padding-bottom:2px;
+
+		li{
+			padding:10px;
+			background:$white-color;
+			margin:1px;
+			margin-top:2px;
+			
+
+			
+			a{
+				@extend .extender1;
+				@include font-size(1.4em);
+				letter-spacing: 2px;
+
+				&:hover{
+						color:$hover-color;
+
+					}
+
+
+
+			}
+		}
+	}
+}
+
+.container{
+	#big-pic{
+		border:$border;
+	}
+	.header-div{
+		
+
+		
+		#logo{
+			width:150px;
+			padding:20px;
+			float:left;
+
+
+		}
+	}
+	
+
+	h1{
+		
+		color:$black;
+		display: inline-block;
+		@include font-size(3.3em) ;
+		
+		margin:3%;
+		margin-top:1.5%;
+		margin-bottom:1.5%;
+		font-family: $font;
+		
+		
+
+	}
+
+	img{
+		width:100%;
+	}
+
+	.top-text{
+		font-family: $font;
+		margin:2%;
+		word-spacing: 1px;
+		margin-top:30px;
+		h2{
+			@include font-size(1.8em);
+			color:$black;
+			text-align: left;
+			margin-top:2%;
+			margin-bottom:2%;
+			
+
+
+		}
+	}
+	
+
+	}
+
+	.img-row{
+		overflow: auto;
+		img{
+			width:100%;
+			margin-top:10px;
+			margin-bottom:10px;
+			border:$border;
+		}
+	}
+
+	article{
+		margin-top:10px;
+		@include font-size(1.2em);
+		font-family: $font;
+		p{
+			margin-top:30px;
+			margin-bottom:30px;
+		}
+	}
+
+	footer{
+		background:$white-color;
+		@include border-radius(3px);
+		font-family: $font;
+		border-top:$border;
+		clear:both;
+		nav{
+			border-top:none;
+			ul{
+			@extend .extender2;
+
+				li{
+					padding:10px;
+					
+					
+					a{
+						@extend .extender1;
+						font-size:1.4em;
+						letter-spacing: 2px;
+
+						&:hover{
+							color:$hover-color;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	.container2{
+		margin:1%;
+		margin-bottom:30px;
+		float:left;
+		margin-top:10px;
+		p{
+			word-spacing: 1px;
+			font-size:1em;
+		}
+		article{
+			h4{
+				font-size:1.5em;
+			}
+		}
+		h3{
+			font-size:1.8em;
+			font-family: $font;
+
+		}
+	}
+}

@@ -1,0 +1,178 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body{
+		margin:0;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+nav ul{
+	display:none;
+
+}
+
+nav select{
+	width:96%;
+	margin-left:2%;
+}
+
+nav{
+	padding:.5em 0;
+	background:#7CC9D9;
+
+}
+
+.clearfix:after{
+	content:"";
+	display:table;
+	clear:both;
+
+}
+
+
+
+
+header h4{
+	
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+
+}
+
+#logo{
+	
+	margin-left:2%;
+	    padding-right: 2%;
+    width: 100px;
+    float: left;
+
+
+
+}
+
+header h1{
+	
+	font-family: Verdana;
+	font-size: 1.7em;
+    font-weight: 700;
+    color: #7DCADA;
+    padding: 1.2em 0 0 1%;
+    letter-spacing: 2px;
+}
+header{
+	
+	color:#fff;
+	background:#0C3C60;
+	display: block;
+	
+}
+
+header h5{
+	
+	font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    padding: .3em 0 .7em 1%;
+    padding-bottom:0;
+
+
+	
+}
+
+
+.article1{
+
+}
+
+#content{
+	margin:1%;
+	margin-top:20px;
+	display:block;
+}
+
+#content h3{
+	font-weight:600;
+	font-size:24px;
+}
+
+.decorative-div-below-nav{
+	height:2px;
+	background:black;
+	width:100%;
+}
+
+.title-of-article{
+	font-size:20px;
+	font-weight: 500;
+	margin-top:2px;
+}
+
+.home-improvement-picture{
+	width:50%;
+	float:right;
+	padding:8px;
+}
+
+
+
+
+.social-link-box{
+	float:left;
+	
+	background:#7DCADA;
+	height:70px;
+	width:29.3%;
+	border-radius:4px;
+	cursor: pointer;
+	margin:2%;
+	color:black;
+	text-align: center;
+	vertical-align: center;
+
+
+}
+
+.social-link-box:hover{
+	background:#fff;
+	color:black;
+}
+
+.social-link-box p{
+	margin-top:25px;
+
+}
+
+
+
+.button-row-div{
+	background:#D1E0EB;
+	height:30px;
+	clear:both;
+	height:216px;
+	border-top:30px solid #0C3C60;
+}
+
+footer{
+	clear:both;
+	text-align:center;
+	background:#0C3C60;
+	height:30px;
+	padding-top:10px;
+	color:#fff;
+
+
+
+
+}
+
+
+
+
+
+
+

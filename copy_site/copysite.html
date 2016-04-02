@@ -1,0 +1,110 @@
+
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<style>
+			body{margin:0px; height:100%; background:#121211; font-family:Arial,sans-serif;}
+			.wrap{ width:100%; min-width:915px;}
+			.topBar{background:#2B2B2B; width:100%; height:45px; box-shadow:0 0 11px 1px #111; min-width:915px;}
+			#imgurLogo{width:68px; height:25px; margin-left:4em; margin-top:9px;}
+			#imgurLogo:hover{}
+			#main-nav{}
+			
+			.galleryBack{background:rgb(43,43,43); position:relative; margin:auto; width:900px; height:2000px; margin-top:67px; -webkit-box-shadow:0 0 11px 1px #111; border-radius:10px;}
+			.galleryTop{background:#2B2B2B;}
+			.backgroundImg{ width:100%; min-width:1000px; background:url('main-bg.png') top center no-repeat;height:429px; position:absolute; top:45; max-width:100%; overflow-x:hidden; z-index:-100;}
+			.menuBtn{}
+			.bar{width:18px; height:2px; background:#fff; opacity:0.9; margin:2px; border-radius:40px;}
+			.menu-icon{margin-top:-51; margin-left:105px;}
+			.upload-btn{background:linear-gradient(#3274e5,#2d67cc); width:160px; height:26px; border-radius:3px; border-top: 1px solid #3881ff; border-bottom: 1px solid #1f478c; border-left: 1px solid transparent; margin-top:-62px; margin-left:140px;}
+			.upload-icon img{width:18px; margin-top:8px; margin-left:8px; cursor:pointer;}
+			#arrow-down{background:linear-gradient(#2a61bf,#224d99); width:32px; height:26px; border-radius:3px; margin-left:270px; margin-top:-28; border-top:1px solid #306ed9; border-bottom: 1px solid #1c4180;}
+			#arrow-down img{width:18px; margin-top:4px; margin-left:6px;}
+			.upload-button-container{margin-top:20px; }
+			.upload-button-text{color:#E6E7E9; font-size:13px; position:relative; top:-18; left:36;}
+			li{color:transparent;}
+			.random-shuffle img{position:relative; left:350px; top:-60; width:32px;}
+			.sentence-sorting{color:white; font-size:20px; text-align:center; position:relative; top:30px; }
+			#most-viral{border-bottom:2px solid #85bf25;}
+			#popularity{border-bottom:2px solid #85bf25; margin-left:10px; margin-right:10px;}
+			#search-div{width:390px; height:45px; float:right; margin-top:-98px; background:rgb(43, 43, 43);}
+			#search-div p{color:#7D8080; margin-left:-40px; font-size:13px; margin-top:0px; }
+			.search-bar-right{height:100%; float:left; color:#DDDDD1;}
+			.search-bar-right span{display:inline;}
+			#sign-up{position:relative; float:right; top:-80px; right:80px;}
+			#sign-up img{width:20px; }
+			#sign-in{  margin-left:40px;}
+			#search{  margin-left:40px;}
+			#search-icon{position:relative; top:-27; width:14px; left:15px;}
+			.galleryTop{padding:21px; border-radius:20px;}
+			.post{width:180px; height:180px;}
+			.post img{width:180px; height:180px; margin:4px;}
+
+		</style>
+	</head>
+	<body>	
+		<div class="wrap">
+			<div class="topBar">
+				<div id="headerLogo"></div>
+				<a href="copysite.html"><img src="imgurLogo.png" id="imgurLogo"></a>
+				<div id="main-nav">
+					<ul>
+						<li class="menuBtn">
+							<div class="menu-icon">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</li>
+						<li class="upload-button-container">
+							<div class="upload-btn">
+								<div class="upload-icon">
+									<img src="cloud.png" alt="upload">
+								</div>
+								<span class="upload-button-text">upload images</span>
+							</div>
+							<div id="arrow-down">
+								<img src="down_arrow.png" alt="down_arrow">
+							</div>
+						</li>
+					</ul>
+					<div class="random-shuffle">
+						<img src="random.png" alt="randomShuffle">
+					</div>
+				</div>
+				<div id="search-div">
+					<ul>
+						<li id="search" class="search-bar-right">
+							<p>Search</p>
+							<img src="search.png" id="search-icon">
+						
+						<li id="sign-in" class="search-bar-right"><span>sign in</span></li>
+						<li id="sign-up" class="search-bar-right"><span>sign up</span></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="backgroundImg"></div>
+			<div class="main_content">
+				<div class="sentence-sorting">
+					
+						The <span id="most-viral">Most Viral</span> images on the Internet, sorted by<span id="popularity">Popularity</span>
+					
+				</div>
+				<div class="galleryBack">
+					<div class="galleryTop">
+						<div id="picture" class="post">
+							<img src="land1.jpg">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>

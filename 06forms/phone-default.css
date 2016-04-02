@@ -1,0 +1,271 @@
+html{
+	-webkit-text-size-adjust: none;
+	font-family: "Guardian Text Egyptian Web",Georgia,serif;
+}
+
+*{
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+body{
+	font-size: 16px;
+	margin:0;
+	background:#f6f6f6;
+}
+
+#container{
+	background-color:#fff;
+	min-width:320px;
+	max-width: 1000px;
+	border:1px solid black;
+	
+}
+
+#logo{
+		border-radius: 50%;
+		border:solid #fff 6px;
+		width:100px;
+		height:100px;
+		float:left;
+		margin:10px;
+		margin-top:20px;
+	}
+
+header{
+	background:#005689;
+	height:140px;
+	color:#fff;
+
+
+}
+
+h1{
+	margin-bottom: 0px;
+	margin-top:0px;
+
+}
+
+h2{
+	margin-bottom: 0px;
+	margin-top:0px;
+	padding-bottom:0px;
+}
+
+hgroup{
+	
+	padding-top:25px;
+}
+
+#decorative-bar{
+	background:#dcdcdc;
+	height:8px;
+
+}
+
+
+nav ul{
+	margin:0px;
+	padding-left:0px;
+	background:#00456e;
+	padding-top:1px;
+	padding-bottom:1px;
+	
+}
+
+
+nav ul li a{
+	display:block;
+	text-align:center;
+	padding:.7em;
+	color:#fff;
+	text-decoration: none;
+	border:solid 1px #dcdcdc;
+	border-radius:10px;
+	margin:.5em;
+	font-size: .85em;
+	background:#4bc6df;
+
+
+}
+
+nav ul li.active a{
+	background:purple;
+
+}
+
+nav ul li a:hover{
+	background-color:#bb3a7f;
+}
+
+nav ul li{
+	list-style-type: none;
+
+
+}
+
+figure.w100{
+	width:100%;
+	margin:0px;
+}
+
+figure.w33{
+	width:96%;
+	margin:0px;
+
+	border:1px solid #999;
+	margin:.3em 0 .3em 2%;
+}
+
+figure img{
+	width:100%;
+}
+
+footer{
+	clear:both;
+	text-align:center;
+	padding:1em;
+	background-color:#bb3a7f;
+	color:#fff;
+	font-size:.6em;
+	height:70px;
+	margin-top:20px;
+}
+
+footer p{
+	padding:1em;
+}
+
+#image-and-text{
+	margin-top:10px;
+}
+
+
+
+#image-and-text figcaption{
+	text-align: center;
+	font-size:.6em;
+	color:#777;
+
+
+}
+
+#container article{
+	margin:0 2%;
+}
+
+#content{
+	
+	margin:2%;
+}
+
+
+
+#content2{
+	
+	margin-right:2%;
+}
+article.news, article.tweets{
+	background:#dcdcdc;
+	margin-top:.5em;
+	margin-bottom:.5em;
+}
+
+article.news h2, article.tweets h2{
+	color:#fff;
+	font-size: 15px;
+	padding:.5em;
+}
+
+article.news h2{
+	background:#005689;
+}
+
+article.tweets h2{
+	background:#4bc6df;
+}
+
+article h3{
+	padding-left:10px;
+	margin-bottom:5px;
+	margin-top:5px;
+	font-size:13px;
+	
+
+}
+
+article p{
+	padding:10px;
+	margin-top:3px;
+	margin-bottom:3px;
+	font-size:12px;
+}
+
+form#conference{
+	padding:5px;
+
+	
+}
+
+fieldset{
+ background:#dcdcdc;
+ border-radius: 8px;
+ margin-bottom:30px;
+}
+
+legend{
+	background:#005689;
+	border-radius: 4px;
+	border: 1px solid purple;
+	color:#fff;
+	padding:10px;
+	margin-left:30px;
+}
+
+#progress-bar{
+	margin-left:25px;
+}
+
+label span{
+	display:block;
+	font-family:sans-serif;
+}
+
+form input{
+	width:100%;
+	height:30px;
+	border-radius:5px;
+	font-size: 16px;
+	margin-bottom:12px;
+	background-image: url("default-icon.png");
+	background-repeat:no-repeat;
+	background-size: 26px;
+	text-indent: 30px;
+}
+
+.submitBtn{
+	height:40px;
+	width:80%;
+	margin-left:10%;
+	background:#dcdcdc;
+	cursor: pointer;
+}
+
+.submitBtn:hover{
+	background:#bb3a7f;
+}
+
+footer{
+	margin-top:0;
+}
+
+.thanks-div{
+	
+	height:300px;
+	text-align: center;
+}
+
+.thanks-div p{
+	margin-top:200px;
+}

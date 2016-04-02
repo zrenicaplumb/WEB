@@ -1,0 +1,31 @@
+html,body{
+	-webkit-text-size-adjust:none;
+}
+
+#div1{
+	display:none;
+	margin:10px;
+	background:purple;
+	border-radius: 2px;
+	width:200px;
+	height:20	0px;
+	color:white;
+	font-size: 24px;
+	margin:auto;
+	margin-top:200px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 460px) {
+    #div1 {
+       display:block;
+
+    }
+
+}

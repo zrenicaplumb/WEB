@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- This start file was build by Paul Cheney  -->
+        <title>HTML5 Start Site by Paul Cheney</title>
+
+        <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <!-- LOAD THE LATEST VERSION OF JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $(".nav-button").click(function () {
+            $(".nav-button,.primary-nav").toggleClass("open");
+            });    
+        });
+        </script>
+
+        <!----- STYLE SHEETS ----->
+        <link href="css/reset.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="css/phone-default.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="css/tablet.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="css/desktop.css" rel="stylesheet">
+        <link href="css/mobilemenu.css" rel="stylesheet">
+        
+
+
+        <!--[if lt IE 9]>
+        	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+         
+    </head>
+    <body>
+       
+        <div class="header-wrapper">
+        	<header class="clearfix">
+                <div class="search">
+                    <form>
+                        <input type="text" name="search" value="search..."/>
+                    </form>
+                </div>
+            <img src="images/logo.png" alt="logo">
+                <hgroup>
+                    <h1>NEWSAGEDDON</h1>
+                    <h2>The last thing you'll ever read</h2>
+                </hgroup>
+            </header>
+        </div>
+
+
+
+
+
+
+        <div class="nav-wrapper clearfix">   
+            <!-- page navigation links here -->
+            <nav>
+                <ul class="primary-nav clearfix">
+                	<li class="parent"><a href="#">Politics</a>
+                        <ul>
+                            <li><a href="#">Liberal</a></li>
+                            <li><a href="#">Conservative</a></li>
+                            <li><a href="#">others</a></li>
+                        </ul>
+                    </li>
+
+                	<li class="parent"><a href="#">Opinion</a>
+                        <ul>
+                            <li><a href="#">My way</a></li>
+                            <li><a href="#">Highway</a></li>
+                            
+                        </ul>
+                    </li>
+
+                	<li class="parent"><a href="#">Technology</a>
+                        <ul>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Medical</a></li>
+                            <li><a href="#">Space Exploration</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">Travel</a>
+                        <ul>
+                            <li><a href="#">Mexico</a></li>
+                            <li><a href="#">Europe</a></li>
+                            <li><a href="#">Asia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <button class="nav-button">Toggle Navigation</button>
+            </nav>
+        </div>   
+            
+
+
+
+
+
+        <div class="content-wrapper">
+
+            <!-- page content here -->
+            <div id="content">
+                <h1>Cities</h1>
+                
+                <div class="row">
+
+                    <div class="column">
+                        <article>
+                            <h3>Hong Kong</h3>
+                            <figure>
+                                <img src="images/hongkong.jpg" alt="">
+                                <figcaption>Prosperous and Smoggy Hong Kong</figcaption>
+                            </figure>
+                            <p>Hong Kong is a city, and former British colony, in southeastern China. Vibrant and densely populated, it’s a major port and global financial center famed for its tower-studded skyline. 
+                            </p>
+                            <p>
+                            It’s also known for its lively food scene – from Cantonese dim sum to extravagant high tea – and its shopping, with options spanning chaotic Temple Street Night Market to the city’s innumerable bespoke tailors.</p>
+                           
+                        </article>
+                        <article>
+                            <h3>Sydney</h3>
+                            <figure>
+                                <img src="images/sydney.jpg" alt="">
+                                <figcaption>Beautiful and Fun Sydney</figcaption>
+                            </figure>
+                            <p>Sydney, capital of New South Wales and one of Australia's largest cities, is best known for its harbourfront Opera House, with a distinctive sail-like design.
+                            </p>
+                            <p> Massive Darling Harbour and Circular Quay are hubs of waterside life, with the towering, arched Harbour Bridge and esteemed Royal Botanic Gardens nearby. Sydney Tower’s 268m glass viewing platform, the Skywalk, offers 360-degree views of the city, harbour and suburbs.</p>
+                            
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article>
+                            <h3>Tehran</h3>
+                            <figure>
+                                <img src="images/tehran.jpg" alt="">
+                                <figcaption>Polluted and Troubled Tehran</figcaption>
+                            </figure>
+                            <p>Tehran is the capital of Iran and Tehran Province. With a population of around 9 million in the city and 16 million in the wider metropolitan area, Tehran is the largest city and urban area of Iran.</p>
+                            
+                        </article>
+                        <article>
+                            <h3>Warsaw</h3>
+                            <figure>
+                                <img src="images/warsaw.jpeg" alt="">
+                                <figcaption>Frozen and Historical Warsaw</figcaption>
+                            </figure>
+                            <p>Warsaw is the sprawling capital of Poland. Its widely varied architecture reflects the city's long, turbulent history, from Gothic churches and neoclassical palaces to Soviet-era blocks and modern skyscrapers. </p>
+                            <p>As Poland’s cultural hub, Warsaw has a thriving nightlife and music scene, both classical and underground. After near-total destruction in WWII, Warsaw’s old town was faithfully restored to its pre-war appearance.</p>
+                            
+                        </article>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="row">
+
+                    <div class="column">
+                        <article>
+                            <h3>New York</h3>
+                            <figure>
+                                <img src="images/newyork.jpg" alt="">
+                                <figcaption>Big and Fancy New York</figcaption>
+                            </figure>
+                            <p>Home to the Empire State Building, Times Square, Statue of Liberty and other iconic sites, New York City is a fast-paced, globally influential center of art, culture, fashion and finance.</p>
+                            <p> The city’s 5 boroughs sit where the Hudson River meets the Atlantic Ocean, with the island borough of Manhattan at the “Big Apple's" core.</p>
+                            
+                        </article>
+                        <article>
+                            <h3>Pyongyang</h3>
+                            <figure>
+                                <img src="images/pyongyang.jpg" alt="">
+                                <figcaption>Polluted, oppressed and backwards Pyongyang</figcaption>
+                            </figure>
+                            <p>Pyongyang is the capital of North Korea and the largest city in the country. Pyongyang is located on the Taedong River and, according to preliminary results from the 2008 population census, has a population of 3,255,388.</p>
+                           
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article>
+                            <h3>Jerusalem</h3>
+                            <figure>
+                                <img src="images/jerusalem.jpg" alt="">
+                                <figcaption>Exemplary Jerusalem</figcaption>
+                            </figure>
+                            <p>Jerusalem, a Middle Eastern city west of the Dead Sea, has been a place of pilgrimage and worship for Jews, Christians and Muslims since the biblical era. </p>
+                                <p>Its Old City retains significant religious sites concentrated around the Temple Mount compound, including the Western Wall, sacred to Judaism, and the Dome of the Rock, a 7th-century Islamic shrine with a gold dome.</p>
+                            
+                        </article>
+                        <article>
+                            <h3>Beijing</h3>
+                            <figure>
+                                <img src="images/beijing.jpg" alt="">
+                                <figcaption>Lung's worst nightmare Beijing</figcaption>
+                            </figure>
+                            <p>Beijing, China’s massive capital, has history stretching back 3 millennia. Yet it’s known as much for its modern architecture as its ancient sites such as the grand Forbidden City complex, the imperial palace during the Ming and Qing dynasties.</p> 
+                            <p> Nearby, the massive Tiananmen Square pedestrian plaza is site of Mao Zedong’s mausoleum and the National Museum of China, displaying a vast collection of cultural relics.</p>
+                            
+                        </article>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div><!-- end content -->
+        </div>    
+            
+
+
+
+
+
+
+
+        <div class="footer-wrapper">
+
+            <footer>
+            <p>&copy; Will Plumb &bull; News site</p>
+            </footer>
+        </div>    
+           
+    </body>
+</html>

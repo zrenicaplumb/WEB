@@ -1,0 +1,28 @@
+@media screen and (min-width: 1140px){
+
+	#logo-text{
+		width:180px;
+		padding-left:10px;
+	}
+
+	#logo-circle{
+		width:70px;
+	}
+	.inner-blue-div #p1{
+		font-size: 2.5em;
+		text-align: left;
+	}
+
+	.inner-blue-div p{
+		font-size: 1.2em;
+	}
+
+	.inner-blue-div #sign-up{
+		float:left;
+		}
+
+	.inner-blue-div p{
+		text-align: left;
+		margin-top:10px;
+	}
+}

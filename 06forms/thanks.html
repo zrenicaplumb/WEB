@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 	
+ 		
+ 		
+ 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="phone-default.css">
+		<link rel="stylesheet" type="text/css" href="tablet.css">
+		<link rel="stylesheet" type="text/css" href="desktop.css">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+ 	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="container">
+				<header>
+					<div id="logo">
+					</div>
+					<hgroup>
+						<h1>You Will Be Punished .com </h1>
+						<h2>Welcome and enjoy!</h2>
+					</hgroup>
+				</header>
+
+				<div id="decorative-bar"></div>
+				<div id="tablet-nav-coloring">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="thanks.html">Thanks page</a></li>
+							<li><a href="#">Tablet Enhancements</a></li>
+							<li><a href="form.html">Form</a></li>
+						</ul>
+						<div class="keep-open"></div>
+					</nav>
+				</div>
+				
+
+							
+
+				<div class="thanks-div">
+
+					<p>Thanks for filling out the form, you are awesome!<p>
+				</div>
+				
+
+
+
+				</div>
+				
+				
+						
+				
+
+
+
+				
+
+
+
+		
+				
+				</div>
+				
+				<footer>
+					<p>yo</p>
+				</footer>
+			</div>
+		</div><!--wrap-->
+		
+	</body>
+	<script>
+	$(document).ready(function(){
+		//#387199
+		$('nav a').click(function(){
+					if(this.id == 'home'){
+						$('nav a').css({'color':'#fff'});
+						this.style.color = '#387199';
+					
+
+					}else if(this.id != 'home'){
+						$('nav a').css({'color':'#fff'});
+						$('#home').css({'color':'#fff'});
+						this.style.color = '#387199';
+					}
+					
+				});
+		$('#bottom-info a').click(function(){
+					if(this.id == 'home2'){
+						$('#bottom-info a').css({'color':'#387199'});
+						this.style.color = '#97C6EC';
+					
+
+					}else if(this.id != 'home2'){
+						$('bottom-info a').css({'color':'#387199'});
+						$('#home2').css({'color':'#387199'});
+						this.style.color = '#97C6EC';
+					}
+					
+				});
+
+		
+		
+		
+		
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+

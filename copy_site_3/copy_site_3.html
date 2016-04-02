@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 		<meta charset="UTF-8">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/path/to/parallax.js"></script>
+ 		<style>
+ 			.top-black-bar{background:black; height:30px;}
+ 			body{margin:0; font-family: 'HelveticaRegular',Helvetica,Arial;}
+ 			ul{font-family: serif;margin: 0; padding:0; list-style-type:none; width:17%;  margin:auto; height:100%; }
+ 			ul li a{text-decoration:none; color:white; display:inline-block; margin:6px; font-size: 15px;} 
+ 			ul li{display:inline-block;   width:29%;}
+ 			.image-div{height:100px;background:red;}
+ 			.wrap{background-image:url('https://static.wixstatic.com/media/a38016_08f1465c87b14f6b8ff181c7e7f1f99e.jpg/v1/fill/w_1210,h_545,al_c,q_75,usm_0.50_1.20_0.00/a38016_08f1465c87b14f6b8ff181c7e7f1f99e.jpg');height:1000px; background-repeat:no-repeat; background-attachment:fixed;}
+ 			a:hover{color:gray; transition:color 0.4s;}
+ 			.background-image-text{text-align: center; font-size: 2em; font-family: 'josefin-slab'; font-weight:lighter; }
+ 			.background-image-text h1{margin-top:40px; margin-bottom:0px;}
+ 			.background-image-text span{font-family: sans-serif; font-size: 20px;}
+ 			
+ 			
+ 		</style>
+ 		
+			
+</script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="top-black-bar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div><!--top-black-bar-->
+			<div class="background-image-text">
+				<h1>MOUNTAIN MAN</h1>
+				<span>Mark Johnson Photography</span>
+			</div><!--background-image-text-->
+			<div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>
+
+
+			
+
+			<footer>
+			</footer>
+		</div><!--wrap-->
+	</body>
+</html>

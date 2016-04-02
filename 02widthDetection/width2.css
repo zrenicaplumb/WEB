@@ -1,0 +1,18 @@
+#div2{
+	display:none;
+	margin:10px;
+	background:red;
+	border-radius: 2px;
+	width:200px;
+	height:200px;
+	color:white;
+	font-size: 24px;
+	margin:auto;
+	margin-top:200px;
+}
+
+@media screen and (min-width: 461px) and (max-width: 900px) {
+    #div2 {
+       display:block;
+    }
+}

@@ -1,0 +1,145 @@
+@media only screen and (min-width: 600px){
+	#logo{
+		width:170px;
+		
+	} 
+
+	header h1{
+	
+	font-family: Verdana;
+	font-size: 2.7em;
+    font-weight: 700;
+    
+    padding: 1.8em 0 0 1%;
+}
+
+header h5{
+	
+	font-size: 1em;
+    font-weight: 700;
+    
+    padding: .3em 0 .7em 1%;
+    padding-bottom:1em;
+
+
+	
+}
+	nav select{
+		display:none;
+	}
+
+	nav ul{
+		display:block;
+	}
+
+
+	nav{
+
+		width:25%;
+		
+		padding:0;
+		float:left;
+		margin-right:1%;
+	}
+
+	
+
+	
+
+	nav ul li a{
+		display:block;
+		padding:.6em;
+		text-decoration: none;
+		border:1px solid black;
+		
+		color:#fff;
+		font-weight: 600;
+		background:#0C3C60;
+	}
+
+	nav ul li a:hover{
+		background:#fff;
+		color:black;
+	}
+
+	nav ul li ul{
+		padding:0;
+		margin:0;
+	}
+
+	nav ul li ul li a{
+		color:white;
+		padding:.6em;
+		padding-left:20px;
+		font-size:.7em;
+		background:#7DCADA;
+	}
+
+	nav ul li.selected a{
+		
+	}
+
+	nav ul li.selected ul li a{
+		
+	}
+
+	nav ul li ul li.selected a{
+
+	}
+
+	.decorative-div-above-nav{
+		background:#7DCADA;
+		height:5px;
+
+	}
+
+
+
+
+
+
+#content{
+		width:72%;
+
+		float:left;
+		
+
+		margin-bottom:20px;
+		
+	}
+
+
+	.home-improvement-picture{
+	width:44.444%;
+	float:right;
+	padding:4px;
+}
+
+.button-row-div{
+	
+	height:30px;
+	clear:both;
+	height:100px;
+	
+}
+
+.social-link-box{
+	
+	   margin-top:3px;
+	   margin-bottom: 3px;
+	
+	height:60px;
+	    width: 12.666%;
+	border-radius:9px;
+	cursor: pointer;
+	
+	
+	text-align: center;
+	vertical-align: center;
+
+}
+
+
+
+
+}

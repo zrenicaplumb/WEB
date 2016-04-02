@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- LOAD THE LATEST VERSION OF JQUERY-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/phone-default.css" rel="stylesheet">
+		<link href="css/tablet.css" rel="stylesheet">
+		<link href="css/desktop.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<script src="js/jquery-scrolltofixed.js"></script>
+		<script src="js/beans.js"></script>
+		<script src="js/jquery.lazyload.js"></script>
+		<script type="text/javascript">
+					$(function() {
+			    $("img.lazy").lazyload({
+			    	threshold: 600, effect: "fadeIn"
+			    });
+			});
+		</script>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<meta name="apple-mobile-web-app-title" content="Will's site">
+
+		<link rel="shortcut icon" sizes="16x16" href="A2H_stuff/icon-16x16.png">
+		<link rel="shortcut icon" sizes="196x196" href="A2H_stuff/icon-196x196.png">
+
+		<link rel="apple-touch-icon-precomposed" href="A2H_stuff/icon-152x152.png">
+
+		<link rel="stylesheet" type="text/css" href="A2H_stuff/style/addtohomescreen.css">
+		<script src="A2H_stuff/addtohomescreen.js"></script>
+		<script>
+		addToHomescreen({
+			skipFirstVisit: false,
+			maxDisplayCount: 0,
+			displayPace:1;
+		});
+		</script>
+
+
+
+
+	</head>
+	<body>
+		<nav class="clearfix">
+				
+				<img id="hamburger-menu" src="images/hamburger-menu.png">
+				<img id="logo" src="images/logo.png" alt="logo">
+				<ul>
+					<li><a href="index.html">lazyload 1</a></li>
+					<li><a href="index2.html">lazyload 2</a></li>
+					<li><a href="addToHome.html">add to home</a></li>
+					<li><a href="#">Gallery</a></li>
+
+				</ul>
+				<div class="search-and-shop">
+					<img id="cart-icon" src="images/cart.png" alt="cart">
+					<img id="search-icon" src="images/search.png" alt="search">
+
+				</div>
+				
+			</nav>
+		<div class="wrap">
+			
+
+
+
+
+
+			<div class="slide-out-menu">
+				<ul>
+					<li><a href="index.html">lazyload 1</a></li><img src="images/down-arrow.png">
+					<li><a href="index2.html">lazyload 2</a></li><img src="images/down-arrow.png">
+					<li><a href="addToHome.html">add to home</a></li><img src="images/down-arrow.png">
+					<li><a href="#">Gallery</a></li><img src="images/down-arrow.png">
+				</ul>
+			</div>
+
+
+
+
+
+
+			<div class="jumbotron clearfix">
+				<img src="images/forest-wallpaper.jpg">
+				<h3>With 120 carts in 120 categories</h3>
+				<h2>YOU CAN CREAT LANDING PAGES</h2>
+				<p>Quisque velit nisi, pretium uquet elit, eget tincidunt nibh pulvinar a.</p>
+				<button class="button" href="#">CLICK ME</a>
+				<button class="button" href="#">DO IT OR ELSE</a>
+				
+			</div>
+
+			<div class="image-gallery">
+				<figure>
+					<img class="lazy bob" src="images/pic1gray.jpg" data-original="images/pic1.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic2gray.jepg" data-original="images/pic2.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic3gray.jepg" data-original="images/pic3.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic4gray.jepg" data-original="images/pic4.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic5gray.jepg" data-original="images/pic5.jpeg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic6gray.jpg" data-original="images/pic6.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic7gray.jpg" data-original="images/pic7.png">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic8gray.jpg" data-original="images/pic8.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic9gray.jpg" data-original="images/pic9.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+				<figure>
+					<img class="lazy" src="images/pic10gray.jpg" data-original="images/pic10.jpg">
+					<figcaption>image caption</figcaption>
+				</figure>
+
+			</div>
+		</div>
+		<div class="footer">
+				footer
+			</div>
+	</body>
+
+</html>

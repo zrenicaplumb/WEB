@@ -1,0 +1,127 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-----BODY -----*/
+body {
+	font-size: 16px;	
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400; /*also loaded 500*/
+	background-color:#F6F7FB;
+}
+
+
+
+#left {
+	
+}
+
+
+header {}
+header h1 {}
+header h2 {}
+
+nav ul{
+	background:#E1E3E4;
+	width:96%;
+	margin:auto;
+	border-radius: 10px;
+	margin-top:5px;
+
+
+
+}
+
+
+nav {
+	
+text-align:center;
+font-size: 18px;
+
+padding-top:8px;
+padding-bottom:8px;
+}
+nav ul li {
+	border: solid 1px white;
+	padding:5px;
+
+	
+
+}
+nav ul li a {
+	color:black;
+}
+nav ul li a:hover {
+	
+}
+
+
+#container{
+	background:white;
+	
+	margin:auto;
+	max-width:1140px;
+}
+
+.content {
+	background:white;
+	margin:auto;
+	width:96%;
+
+}
+
+header{
+	background:#E3E8EE;
+	height:120px;
+}
+
+header img{
+	width:310px;
+}
+
+
+footer {
+	clear: both;
+	text-align: center;
+	
+	height:40px;
+	background:#3C948B;
+	margin-top:5px;
+	padding-top:6px;
+	
+}
+
+div.decorative-wrap{
+	display:none;
+}
+
+#showPhoneNav{
+	background:#3C948B;
+	width:96%;
+	height:30px;
+	margin:auto;
+	font-size: 18px;
+	border-radius:25px;
+	padding-bottom:2px;
+
+
+}
+.decorative-div{
+	
+	height:2px;
+	background:black;
+	margin-bottom:10px;
+	margin-top:2px;
+	
+}
+
+.content .crafts-img{
+	border:solid 1px black;
+	width:100%;
+	margin-top:8px;
+}
+
+
+}

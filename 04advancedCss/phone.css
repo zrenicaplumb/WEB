@@ -1,0 +1,154 @@
+body{
+	font-family: 'Roboto Slab', serif;
+	margin:0;
+	background:url('crossword.png');
+	background-repeat: repeat;
+
+}
+
+
+
+h1{
+	margin:0;
+}
+
+nav ul li{
+	float:left;
+	width:46%;
+	margin:0 2%;
+	margin-bottom:2px;
+	margin-top:9px;
+	
+	list-style-type: none;
+}
+ nav ul li a{
+ 	
+ 	background:#86C95D;
+ 	text-decoration: none;
+ 	color:white;
+ 	text-align: center;
+ 	display:block;
+ 	font-weight:600;
+ 	
+ 	border-radius: 16px;
+
+ }
+
+ nav ul li a:hover{
+ 	background:#F3F3F3;
+ 	color:black;
+ }
+
+ nav ul{
+ 	
+ 	padding:0px;
+	margin:0px;
+ }
+
+.top-bar{
+	background:#272727;
+	height:80px;
+	color:#fff;
+
+
+}
+
+
+.top-bar h1{
+	text-align: center;
+	padding-top:16px;
+
+}
+
+.top-bar h2{
+	display:none;
+
+}
+
+
+
+nav{
+	background:#26519E;
+	height:100px;
+	font-family: 'Fjalla One', sans-serif;
+
+}
+
+.gradient-bar{
+	height:10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8e498+0,bfe074+54,bbff33+100,c6e27e+100 */
+background: #d8e498; /* Old browsers */
+background: -moz-linear-gradient(left,  #d8e498 0%, #bfe074 54%, #bbff33 100%, #c6e27e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #d8e498 0%,#bfe074 54%,#bbff33 100%,#c6e27e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #d8e498 0%,#bfe074 54%,#bbff33 100%,#c6e27e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e498', endColorstr='#c6e27e',GradientType=1 ); /* IE6-9 */
+
+}
+
+.content h3{
+	margin:10px;
+}
+
+#landscape1{
+	width:100%;
+	padding-top:15px;
+	padding-right:15px;
+	padding-bottom:0px;
+	float:left;
+
+
+	
+}
+
+#landscape1:hover{
+	opacity:.8;
+	cursor: pointer;
+	
+	
+	transition:  width 1s;
+
+	
+}
+
+.landscape{
+	width:100%;
+	padding-top:15px;
+	padding-right:15px;
+	padding-bottom:0px;
+	float:left;
+}
+
+
+
+article{
+	box-shadow: 0px 0px 7px gray;
+	padding-left:5px;
+
+}
+
+article p{
+	margin-bottom:0px;
+}
+
+footer{
+	text-align:center;
+	background:#26519E;
+	height:50px;
+	color:#fff;
+	
+	
+}
+
+footer p{
+	margin-top:0px;
+	padding-top:13px;
+}
+
+article img{
+	padding-bottom:0px;
+}
+
+.header-img{
+	display:none;
+}
+

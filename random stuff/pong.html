@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+	<head>
+
+		<style>
+			.paddle {
+				position:absolute;
+				border-radius:10%;
+				
+				background-color:black;
+
+			}
+			.ball {
+				position:absolute;
+				border-radius:50%;
+
+				
+
+
+
+			}
+			.brick {
+				position:absolute;
+				border-radius:10%;
+			}
+			body {
+				background-color:red;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+	<div class="gameWrap">
+		
+		
+	</div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+		$(function(){
+
+
+
+			
+
+
+			/*
+				$('...').offset() = {top:123, left:123}
+				$('...').css({left:123, top:123}) // assigns the css you tell it to the element
+
+				$('body').mousemove(function(event){
+					event.clientX = mouse's x position
+					event.clientY = mouses's y position
+					//make the paddle be where the mouse is
+				});
+
+
+
+			needs
+				- paddle
+				- ball
+				- bricks
+
+		
+			*/
+
+
+			Game = {
+				
+				bricks : [],
+				init: function(){
+					//give background color/image
+					var curr_row;
+					for(var i = 0;i<25;i++){
+
+						var columns = 5;
+						var row = Math.floor(i/columns);
+						var column = (i % columns);
+						var width = 75;
+						var height = 40;
+						var spacing = 5;
+						var top = row * (height+spacing);
+						var left = column * (width+spacing)+380;
+						
+						Brick.init(left,top,width,height,"blue");
+						Paddle.init(30,500,90,40,'black');
+						Ball.init(120,90,30,30,'green');
+
+					}
+					
+
+					
+
+					
+					
+
+
+
+					//initialize game loop
+					this.gameLoop = window.setInterval(function(){
+						Game.ball.move();
+					}, '50');
+						
+						
+						//every 20 ms move ball in the direction it's going at the speed it's going
+						//once the ball has moved, check if it has hit a wall
+							//walls are the sides of the window $('window').width();
+								//wall left is always 0
+								//wall right is $(window).width();
+								//wall top is always 0
+								//wall bottom is $(window).height();
+
+							//check each brick to see if the ball is touching it
+								
+				},
+
+			}
+
+			Brick = {
+				init: function(x,y,width,height,color){
+					var brick = Object.create(this);
+					brick.top = x;
+					brick.bottom = x+height;
+					brick.left = y;
+					brick.right = y+width;
+
+					brick.element = $('<div class="brick"></div>');
+					$('.gameWrap').append(brick.element);
+					brick.element.css({top:y, left: x, height:height, width:width, 'background-color':color});
+					Game.bricks.push(brick);
+					
+					//make it its size
+					//make it its color
+				},
+
+				checkCollision: function(btop,bbottom,bleft,bright){
+					if(ball.top > brick.top){
+						if(ball.top <= brick.bottom){
+							if(ball.right > brick.left){
+								if(ball.left <= brick.right){
+									if(ball.bottom > brick.top){
+										if(ball.top <= brick.bottom){
+											if(ball.left < brick.right){
+												if(ball.right <= brick.left){
+													ball.move();
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					//if the ball's top  is greater brick's top, but the top is not greater thatn the brick's bottom
+
+									//and if the ball's right is greater than the brick's left, but the ball's left is not greater than the brick's right
+										//and if the ball's bottom is greater than the brick's top, but the ball's top is not greater than the brick's borrom
+											//and if the ball's left is less than the brick's right, but the ball's right is not greater than the brick's left
+
+												//THEN THERE IS A COLLISION 
+					//if there is a collision
+						//did we hit from the top, bottom, left, or right
+							//if we hit from the top, change y your direction to down
+							//if we hit from the bottom, change y your direction to up
+							//if we hit from the lfet, change your x direction to right
+							//if we hit from the right, change your x direction to left
+
+					//if you collided with the bottom wall, the game is over
+
+				}
+
+
+
+			}
+
+			Paddle = {
+				init: function(x,y,width,height,color){
+					var paddle = Object.create(this);
+					paddle.width = width;
+					paddle.height = height;
+					paddle.color = color;
+
+					
+					paddle.element = $('<div class="paddle"></div>');
+					$('.gameWrap').append(paddle.element);
+					paddle.element.css({top:y,left:x,width:width,height:height,'background-color':color});
+					
+					
+					
+
+
+
+					//put it in its starting place (bottom left probably)
+				},
+
+			}
+
+			Ball = {
+				init: function(x,y,width,height,color,dx,dy,speed){
+					var ball = Object.create(this);
+					ball.top = y;
+					ball.left = x;
+					ball.bottom = y+height;
+					ball.right = x+width;
+					ball.dx = dx;
+					ball.dy = dy;
+					ball.speed = speed;
+					ball.element = $('<div class="ball"></div>');
+					$('.gameWrap').append(ball.element);
+					ball.element.css({top:y,left:x,width:width,height:height,'background-color':color});
+					//put it in its place
+					//make it its color
+					//make it start moving in its direction and speed
+					Game.ball = ball;
+				},
+				move: function(){
+					var speed = 5;
+					var dx = -1;
+					var dy = 1;
+					var imgObj = null;
+					function init(){
+						imgObj = document.getElementsByClassName('ball');
+						imgObj.style.position='releative';
+						imgObj.style.left = '0px';
+					}
+					function moveRight(){
+						imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+					}
+					window.onload = init;
+					//speed = 5;
+					//dx = -1;
+					//dy = 1
+
+					//dx = 0.4
+					//dy = -0.8
+
+					//set this.x = this.x+(dx*speed);
+					//set this.y = this.y+(dy*speed);
+					//also set the css to it Game.ball.css({left:this.x,top:this.y});
+
+				}
+
+			}
+				
+					Game.init();
+
+				
+
+				
+		});
+			
+
+
+
+
+
+
+
+		</script>
+	
+	</body>
+</html>

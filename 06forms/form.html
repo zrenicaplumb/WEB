@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 	
+ 		
+ 		
+ 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="phone-default.css">
+		<link rel="stylesheet" type="text/css" href="tablet.css">
+		<link rel="stylesheet" type="text/css" href="desktop.css">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+ 	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="container">
+				<header>
+					<div id="logo">
+					</div>
+					<hgroup>
+						<h1>You Will Be Punished .com </h1>
+						<h2>Welcome and enjoy!</h2>
+					</hgroup>
+				</header>
+
+				<div id="decorative-bar"></div>
+				<div id="tablet-nav-coloring">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="thanks.html">Thanks page</a></li>
+							<li><a href="#">Tablet Enhancements</a></li>
+							<li><a href="form.html">Form</a></li>
+						</ul>
+						<div class="keep-open"></div>
+					</nav>
+				</div>
+				<div class="form-div">
+
+					<div class="row">
+						<div class="left">
+							
+								
+							<p id="progress-bar">Progress:<progress value="3" max="5"></progress></p>
+							<form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="attend" id="conference">
+								<fieldset class="fieldset1">
+									<legend><span>Personal Information</span></span></legend>
+									<label><span>	Full Name:</span><input name="fullname" type="text" value="" placeholder="full name" pattern="[a-zA-Z - . _]{3,99}" required></label>
+									<label><span>	Email:</span><input name="email" type="email" value="" placeholder="bob@gmail.com" required></label>
+									<label><span>	Address:</span><input name="address" type="text" value="" placeholder="address" pattern="[a-zA-Z0-9 - . _]{3,99}" required></label>
+									<label>	<span>Phone:</span><input name="phone" type="tel" value="" placeholder="1234522345"  required></label>
+								</fieldset>
+
+								<fieldset>
+									<legend><span>Company info</span></legend>
+									<label><span>Company:</span><input name="company" type="text"></label>
+									<label><span>Number of Employees:</span><input name="employeeCount" type="Number"></label>
+									
+									<label><span>Preferred Date:</span><input style="text-indent:15px" name="date" type="date" ></label>
+									<label><span>Badge Color:</span><input name="color" type="color" ></label>
+									<label><span>Credit Card:</span><input name="credit" type="number" autocomplete="off"></label>
+								</fieldset>
+
+								<fieldset>
+									<legend><span>other</span></legend>
+									<label>
+									<span>favorite food:</span>
+									<input type="text" name="favFood" list="food">
+									<datalist id="food">
+										<option value="italian"> </option>
+										<option value="chinese"> </option>
+										<option value="mexican"> </option>
+									</datalist>
+								</label>
+								</fieldset>
+							<input type="submit" value="sign me up!" class="submitBtn">
+							<input type="hidden" value="conference registration" name="subject">
+							<input name="redirect" type="hidden" value="thanks.html">
+
+
+
+							</form>
+
+							
+
+
+						</div>
+					</div>
+
+
+
+
+
+
+				</div>
+				
+				
+						
+				
+
+
+
+				
+
+
+
+		
+				
+				</div>
+				
+				<footer>
+					<p>yo</p>
+				</footer>
+			</div>
+		</div><!--wrap-->
+		
+	</body>
+	<script>
+	$(document).ready(function(){
+		//#387199
+		$('nav a').click(function(){
+					if(this.id == 'home'){
+						$('nav a').css({'color':'#fff'});
+						this.style.color = '#387199';
+					
+
+					}else if(this.id != 'home'){
+						$('nav a').css({'color':'#fff'});
+						$('#home').css({'color':'#fff'});
+						this.style.color = '#387199';
+					}
+					
+				});
+		$('#bottom-info a').click(function(){
+					if(this.id == 'home2'){
+						$('#bottom-info a').css({'color':'#387199'});
+						this.style.color = '#97C6EC';
+					
+
+					}else if(this.id != 'home2'){
+						$('bottom-info a').css({'color':'#387199'});
+						$('#home2').css({'color':'#387199'});
+						this.style.color = '#97C6EC';
+					}
+					
+				});
+
+		
+		
+
+		
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+

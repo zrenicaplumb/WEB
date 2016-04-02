@@ -1,0 +1,25 @@
+// Main SCSS, there should be no CSS in this page!
+
+
+// Global Specificity
+
+@import 'partials/variables.scss';
+@import 'partials/mixins.scss';
+
+
+// Site Specificity
+
+
+// Page Specificity
+
+
+@import 'pages/phone-default.scss';
+
+@media only screen and (min-width: 600px){
+	@import 'pages/tablet.scss';
+}
+
+@media only screen and (min-width: 1140px){
+	@import 'pages/desktop.scss';
+}
+

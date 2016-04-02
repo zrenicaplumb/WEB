@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<form method="POST" action="handler2.php" Id="formData">
+    <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+        <input type="text" class="form-control" id="first_name" placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Last Name</label>
+        <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Weight</label>
+        <input type="text" class="form-control" id="weight" placeholder="Weight">
+    </div>
+
+    <button id='submit' type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<script>
+
+var formData = document.getElementById('formData');
+formData.onsubmit = function(event){
+    console.log(event);
+    event.preventDefault();
+        var form = {
+        first_name:document.getElementById('first_name').value,
+        last_name: document.getElementById('last_name').value,
+        email: document.getElementById('email').value,
+        password: document.getElementById('password').value,
+        weight: document.getElementById('weight').value
+    }
+    console.log(form);
+    $.post('handler2.php',form, function(response){
+        alert(response);
+
+    });
+
+}
+
+
+    
+</script>
+</body>
+</html>

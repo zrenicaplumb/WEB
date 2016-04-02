@@ -1,0 +1,196 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+.wrap{
+	max-width:1140px;
+	margin:auto;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav{
+	background-color:#fff;
+	
+	z-index: 100;
+	box-shadow: 2px 2px 2px gray;
+
+}
+
+
+
+.slide-out-menu{
+	background:#fff;
+	width:270px;
+	position:fixed;
+	height:100%;
+	z-index:10;
+	left:-275px;
+	
+	border:1px solid gray;
+}
+
+.slide-out-menu-show{
+	left:0px;
+}
+
+
+
+.slide-out-menu ul{
+
+}
+
+.slide-out-menu ul li{
+	margin:20px;
+	padding:20px;
+	padding-left:4px;
+	list-style-type: none;
+	
+
+}
+
+.slide-out-menu ul li a{
+	text-decoration: none;
+	color:black;
+	
+}
+
+.slide-out-menu img{
+	width:40px;
+	float: right;
+	position: relative;
+	top:-70px;
+	right:20px;
+}
+
+#logo{
+	width:100px;
+	float:left;
+	cursor: pointer;
+	margin-top:5px;
+}
+
+#hamburger-menu{
+	float:left;
+	width:60px;
+	cursor: pointer;
+}
+
+nav ul{
+	background-color:green;
+	float: left;
+	display: none;
+
+}
+
+
+
+
+
+#search-icon{
+	width:32px;
+	float:right;
+	margin-top:15px;
+	margin-right:5px;
+	cursor: pointer;
+}
+
+#cart-icon{
+	width:72px;
+	float:right;
+	margin-top:4px;
+	margin-right: 10px;
+	cursor: pointer;
+
+
+}
+
+.jumbotron{
+	text-align: center;
+	height:500px;
+	font-family: 'Montserrat', sans-serif;
+	
+	
+}
+
+.jumbotron h2 {
+	padding-bottom:20px;
+	padding-top:20px;
+	color:black;
+	font-size: 2em;
+}
+
+.jumbotron img{
+	width:100%;
+
+}
+
+.jumbotron h3{
+	padding-top:20px;
+}
+
+.jumbotron .button{
+	background-color:inherit;
+	border:2px solid lightgray;
+	border-radius: 40px;
+	width:300px;
+	height:50px;
+	margin:10px;
+	margin-top:20px;
+	margin-bottom: 0px;
+}
+
+
+.bob{
+	margin-top:200px;
+}
+
+.jumbotron-wrap{
+	display: block;
+
+
+}
+.jumbotron .button:hover{
+	background-color:#14A5EB;
+	border:0px;
+	transition:background .3s, border .3s;
+}
+
+.image-gallery img{
+	width:100%;
+	padding:10px;
+	display: block;
+	
+}
+
+
+.image-gallery figcaption{
+		text-align: center;
+		padding:20px 0px;
+	}
+
+
+.footer{
+	background-color: #14A5EB;
+	border-radius:3px;
+	padding:40px;
+	text-align: center;
+	margin-top:20px;
+
+}

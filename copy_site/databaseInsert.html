@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+	<form action="databaseInsert.html" method="POST" enctype="multipart/form-data">
+		File:
+		<input type="file" name="image"> <input type="submit" value="upload">
+	</form>
+	<?php
+		
+
+		$file = $_FILES['image']['tmp_name'];
+
+		if(!isset($file)){
+			echo 'please select an image';
+		}
+		else{
+			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+			echo $image_name = $_FILES['image']['name'];
+			$image_size = getimagesize($_FILES['image']['tmp_name']);
+
+			if($_image_size == false){
+				echo 'thats not an image';
+			}else{
+				if(!$insert = mysql_query("INSERT INTO store VALUES ("", "$image_name","$image")"))
+					echo "problem uploading image.";
+				else{
+					$lastid = mysql_insert_id();
+					echo "image uploaded.<p />Your image:<p /><img src=get.php?id=".$lastid.">";
+				}
+			}
+
+	?>
+</body>
+<html?

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>flexbox website layout tutorial</title>
+		<style>
+			body{
+				margin:0;
+			}
+			body > div{
+				background:lightgray;
+				display:flex;
+				flex-direction:column;
+				
+				justify-content: space-around;
+				
+
+				
+			}
+			body > div > header,nav,main,aside,footer{
+				
+				margin:15px;
+				
+				border-radius: 5px;
+				padding:5px;
+
+			}
+			body > div > header{
+				background:green;
+				order:9;
+				height:120px;
+				flex:0 0 40px;
+			}
+			body > div > nav{
+				background:blue;
+				order:1;
+				height:140px;
+				flex:0 0 40px;
+			}
+			body > div > main {
+				background:yellow;
+				order:2;
+				height:80px;
+				flex:0 0 40px;
+				align-self:flex-start;
+			}
+			body > div > aside{
+				background:orange;
+				order:6;
+				height:200px;
+				flex:0 0 40px;
+			}
+			body > div > footer{
+				background:purple;
+				order:4;
+				height:300px;
+				flex:0 0 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<header>header</header>
+			<nav>nav</nav>
+			<main>main</main>
+			<aside>aside</aside>
+			<footer>footer</footer>
+		</div>
+	</body>
+</html>

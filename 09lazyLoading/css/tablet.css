@@ -1,0 +1,64 @@
+@media only screen and (min-width:600px){
+	#hamburger-menu{
+		display: none;
+	}
+
+	#logo{
+		margin-left:20px;
+		width: 115px;
+	}
+
+	#cart-icon{
+		display: none;
+	}
+	#search-icon{
+		margin-right: 50px;
+	}
+
+	.image-gallery img{
+	width:100%;
+	padding:30px 40px;
+	}
+
+	.image-gallery figcaption{
+		text-align: center;
+	}
+
+	img.lazy.bob{
+		margin-top:400px;
+		border:none;
+	}
+	.slide-out-menu{
+		display:none;
+	}
+	nav{
+	background-color:#fff;
+	
+	z-index: 100;
+
+
+}
+
+	nav ul{
+	background-color: #fff;
+	display: block;
+	
+
+}
+
+	nav ul li{
+		float:left;
+		margin-top:23px;
+		
+	}
+
+	nav ul li a{
+text-decoration: none;
+color:black;
+margin-left:25px;
+	}
+
+	nav ul li a:hover{
+		color:#14A5EB;
+	}
+}
