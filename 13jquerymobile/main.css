@@ -1,0 +1,35 @@
+body #page5,#page6,#page7,#page8, h2{
+	font-size:1.5em;
+	text-align: center;
+}
+
+body img{
+	width:100%;
+}
+
+body p{
+	text-align: left;
+}
+
+body iframe{
+	width:100%;
+	 margin-top:5px;
+}
+
+body .iframe-h2{
+	margin-top:40px;
+}
+
+form {
+	padding:20px;
+}
+
+#bill{
+	font-size:1.2em;
+	margin:10px;
+	margin-bottom:50px;
+	margin-top:20px;
+}
+
+
+

@@ -1,0 +1,77 @@
+body{
+background:#EAEDF4;
+
+}
+	header{
+	height:175px;
+	background-repeat: no-repeat;
+	background:red;
+
+}
+
+#contact-us{
+	margin-top:20px;
+	text-align: center;
+}
+
+form{
+	margin:auto;
+	margin-bottom:50px;
+
+
+}
+textarea{
+	margin:auto;
+}
+
+.top-bar{
+	padding-top:20px;
+	padding-bottom:20px;
+	height:80px;
+	background:#4B93A9;
+
+
+}
+
+.tabs a {
+	background:#4B93A9;
+}
+
+.sticky{
+	background:#4B93A9;
+}
+
+a.alert.button.expand{
+	min-width:30px;
+}
+
+
+.row{
+	margin-top:30px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:40.063em){
+	header{
+	height:334px;
+}
+}
+
+@media only screen and (min-width:64.063em){
+	header{
+	height:500px;
+}
+
+form{
+	width:60%;
+	
+	padding-bottom:20px;
+}
+
+
+}
