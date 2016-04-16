@@ -11,12 +11,20 @@ $(document).ready(function(){
 
 
 
-
-	$(".menu").click(function(){
+			$(".menu").click(function(){
 		$('.slide-out-menu').css({
 			"display":"block"
 		})
 	})
+
+			$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+
+
 
 
 });
