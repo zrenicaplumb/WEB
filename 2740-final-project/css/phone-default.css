@@ -22,9 +22,7 @@ header{
 
 
 
-nav{
-	display: none;
-}
+
 .hamburger-menu-wrap{
 	background:#EF3E34;
 	display: inline-block;
@@ -35,6 +33,50 @@ nav{
 }
 .menu{
 	width:40px;
+	cursor: pointer;
+
+}
+
+
+.slide-out-menu{
+	display:none;
+	position:fixed;
+	background:#272a2d;
+	width:230px;
+	height:100%;
+	
+}
+
+.slide-out-menu nav ul li{
+	list-style-type: none;
+	border-top:1px solid #33373B;
+	border-bottom:1px solid black;
+	padding:20px;
+	padding-top:25px;
+	padding-bottom:25px;
+	border-left:6px solid rgba(0,0,0,0);
+	
+}
+
+nav ul{
+	margin-top:20px;
+
+}
+
+nav ul li:hover{
+	background:#1E2124;
+	border-left:6px solid #EF3E34;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding-left:4px;
+
+	
+}
+
+nav{
 
 }
 #logo{
@@ -58,7 +100,7 @@ nav{
 	display: inline-block;
 	margin:auto;
 	margin-top:13px;
-	box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+	border:1px solid #D0D9DD;
 }
 
 .home-content-wrap{
@@ -159,13 +201,17 @@ nav{
 .home-location h2{
 	font-size:2em;
 	text-align: center;
-	margin-top:10px;
+	margin-top:40px;
 	margin-left:10px;
 	margin-right:10px;
 	margin-bottom:30px;
 	padding-bottom:20px;
 	border-bottom:3px solid #D0D9DD;
+	color:black;
+
 }
+
+
 
 .home-location img{
 	width:100%;
@@ -183,5 +229,19 @@ nav{
 }
 
 footer{
-	background:#EF3E34;
+	background:#272a2d;
+	height:150px;
+	border-top:30px solid #EF3E34;
+	color:#8F9AA4;
+
+}
+
+.footer-col p{
+	text-align: center;
+	margin-top:30px;
+
+}
+
+.footer-col span{
+	color:#fff;
 }

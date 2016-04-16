@@ -12,7 +12,11 @@ $(document).ready(function(){
 
 
 
-
+	$(".menu").click(function(){
+		$('.slide-out-menu').css({
+			"display":"block"
+		})
+	})
 
 
 });
