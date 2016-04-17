@@ -370,7 +370,7 @@ background:#fff;
 .amenities-wrap{
 	color:#fff;
 		text-shadow:0 0 6px black;
-		background:url(../img/amenities-background.jpg);
+		background:url(../img/amenities-pic.jpg);
 		
 		background-repeat: no-repeat;
 		background-size:cover;
@@ -388,7 +388,7 @@ background:#fff;
 
 .amenities-content-wrap h3{
 	font-size: 1.5em;
-	margin-bottom:80px;
+	margin-bottom:170px;
 	margin-top:15px;
 }
 
@@ -443,13 +443,14 @@ background:#fff;
 
 .amenities-about img{
 	border: 1px solid black;
+	margin-bottom:5px;
 }
 
 
-#deck-img{
+.deck-img{
 	width:100%;
 	
-	float:right;
+	border:2px solid #D0D9DD;
 
 	
 
@@ -461,7 +462,70 @@ background:#fff;
 	content: "";
 }
 
-.breakfast{
-	
+
+
+.intro-text{
+	margin-top: 30px;
+    font-size: 4em;
+    margin-left: 10px;
 }
 
+.rooms-about{
+	background:#fff;
+	color:black;
+}
+
+.rooms-about p{
+	margin-bottom:20px;
+}
+
+
+.rooms-wrap{
+	color:#fff;
+	text-shadow:0 0 6px black;
+		background:url(../img/amenities-background.jpg);
+		
+		background-repeat: no-repeat;
+		background-size:cover;
+		
+		
+		background-attachment: fixed;
+}
+
+figcaption{
+	margin-bottom:20px;
+}
+
+figcaption span{
+	color:#3A7A83;
+	font-size: 2em;
+}
+
+.contact-wrap{
+	color:#fff;
+	text-shadow:0 0 6px black;
+		background:url(../img/contact-pic.jpg);
+		
+		background-repeat: no-repeat;
+		background-size:cover;
+		
+		
+		background-attachment: fixed;
+}
+
+.form-div{
+	background:#fff;
+	color:black;
+	text-shadow:none;
+	width:80%;
+	margin:auto;
+	padding:20px;
+}
+
+.form-div h2{
+	border-bottom:1px solid #D0D9DD;
+}
+
+.form-div p{
+	color:#666666;
+}

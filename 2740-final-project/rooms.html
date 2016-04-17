@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
-		<meta charset="UTF-8">
-		<!-- LOAD THE LATEST VERSION OF JQUERY-->
+        <meta charset="UTF-8">
+        <!-- LOAD THE LATEST VERSION OF JQUERY-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,11 +12,13 @@
         <link href="css/tablet.css" rel="stylesheet">
         <link href="css/desktop.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        
+
 
         
         <!--[if lt IE 9]>
-        	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
         
         
@@ -29,7 +30,7 @@
 
 	<body id="rooms-body">
 		
-		<div class="wrap">
+		<div class="rooms-wrap">
             <header>
                 <div class="hamburger-menu-wrap">
                     <img src="img/menu.png" class="menu">
@@ -59,55 +60,79 @@
 
             <div class="home-content">
                 <div class="home-content-wrap">
-                    <h2 id="utah">Bed and Breakfast <span>Utah</span></h2>
-                    <h2 id="bob">When you're ready to come in from the great outdoors</h2>
+                    <h2 class="intro-text">Rooms and Rates </h2>
+                    
                     
                 
                 </div>
                 
-                <div class="home-about">
-                    <h2>What's so special about the mayor's house?</h2>
-                    <p>Welcome to the Mayor's House Bed and Breakfast, located in the town of Moab, in the heart of beautiful Canyonlands, Utah. The Mayor's House is one of the most comfortable and friendly B&Bs in the Moab Valley.</p>
-                    <img id="pic2" src="img/pic2.jpg">
+                <div class="home-about rooms-about">
+                    <h2>Rooms & Rates</h2>
+                    <p>The Mayor's House was built in the 1980s by Tom Stocks,
+                    the former Mayor of Moab, and his wife, Gay. The interior
+                    of the B&B has a warm family appeal and is comfortably
+                    furnished in the Southwestern style with locally handcrafted
+                    furniture.</p>
 
-                    <p>The house was built in 1980; it is a rambling 6000 square-foot home featuring a large common room, six guest rooms, and spacious decks overlooking beautiful landscaped gardens. The B&B also features a large, heated swimming pool and hot tub.</p>
+                    <p>The 16-foot long Western-style breakfast table seats 16, allowing
+                    guests to mingle and become friends with people from all over the
+                    country and the world. Guest rooms are individually decorated to
+                    reflect the many cultures of the Southwest.</p>
+                    <figure>
+                        <img class="deck-img" src="img/mastersuite.jpg">
+                        <figcaption><span>Master Suite</span> <p>$150 (double occupancy)</p>
 
-                    <p>Use us as your home base to explore beautiful national and state parks, spectacular canyons, rugged mountains and breathtaking vistas. Let the staff at the Mayor's House help you plan your itinerary to take advantage of the many recreational activities available here in the heart of red rock country.</p>
+                        <p>This spacious room is furnished with a one-of-a-kind handcrafted king-size bed and a single daybed, which was created by a local artist using timber harvested from the nearby La Sal Mountains. The walls display Native American handcrafted artifacts and Native American prints. 
 
-                    <p>Come and see why so many of our guests return to see us year after year.
-                    </p>
+The room features a large walk-in closet, a dressing area with large counter-to-ceiling mirrors, and a private bathroom with an oval tub. A TV with DVD player is provided. The room has its own private entrance off the main deck overlooking the sunken gardens in the back of the property; a small table and chairs and a small refrigerator are provided at this end of the deck for the exclusive use of the occupants. 
+
+The room can accommodate up to three adults comfortably, with a $20 per person fee above double occupancy. The Master Suite is located on the main floor of the house.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="deck-img" src="img/countryroom.jpg">
+                        <figcaption><span>Country Room</span> <p>$150 (double occupancy)</p>
+
+                        <p>This room features a queen-size sleigh bed of cherrywood. The room is decorated with an elegant country look. 
+
+                        The private bath features a large tub, perfect for soaking. The Country Room is located on the main floor of the house.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="deck-img" src="img/kivaroom.jpg">
+                        <figcaption><span>Kiva Room</span> <p>$150 (double occupancy)</p>
+
+                        <p>This room is usually booked several months in advance in the spring and fall, so book it early. The room features a large double shower and a private bath. The Kiva Room is located in the basement of the house. </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="deck-img" src="img/indianroom.jpg">
+                        <figcaption><span>Indian Room</span> <p>$150 (double occupancy)</p>
+
+                        <p>The Indian Room is located on the basement level of the house, and features a queen-size bed, TV with DVD player. 
+
+The room has its own private bath with jetted tub.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="deck-img" src="img/peachroom.jpg">
+                        <figcaption><span>Peach Room</span> <p>$150 (double occupancy)</p>
+
+                        <p>The soft colors of the Peach room invite you to a good night's sleep in the queen-size bed. The room features TV with DVD player, a private bath with jetted tub, and a separate shower. 
+
+The Peach Room is located on the basement level of the house.</p>
+                        </figcaption>
+                    </figure>
+                    
+
+                     <h2 style="margin-top:80px;">Room Rates</h2>
+                    <p>All room prices are based on double occupancy. In some cases rooms can accommodate extra guests for an additional fee of $20.00 per person.</p>
+                    
                 </div>
 
-                <div class="background-pic"></div>
+              
 
-                <div class="home-location">
-                    <h2>Our Location</h2>
-                    <img src="img/location.jpg">
-                    <p>The Mayor's House is perfectly situated in a quiet
-                    neighborhood overlooking the town of Moab,
-                    just 4 1/2 blocks from downtown-area shopping, restaurants,
-                    museums and art galleries. The view of the world-famous
-                    Slickrock Bike Trail makes the perfect background for a relaxing
-                    afternoon by the pool. </p>
-
-                    <h2>Access To Local Attractions</h2>
-                    <img src="img/town.jpg">
-                    <p>The B&B is within a few minutes walk from Moab's central
-                    business district, but well away from the noise and congestion
-                    of downtown. The B&B is also situated close to the Slickrock Bike
-                    Trail, 10 minutes from the entrance to Arches National Park,
-                    and 30 minutes from the entrance to Canyonlands National Park.
-                    Many bike trails, hiking trails, and jeep trails are all
-                    within a short distance of the B&B. </p>
-
-                    <h2>Bring Your Toys</h2>
-                    <img src="img/toys.jpg">
-                    <p>We invite you to make use of our ample off-street parking, which can accommodate virtually all types of vehicles and trailers. A locked bike storage shed is also available.</p>
-
-                    <h2>Directions</h2>
-                    <p>Moab is approximately 4½ hours from Salt Lake City, Utah, and six hours from Denver, Colorado.</p>
-                    <div id="googleMap"></div>
-                </div>
+                
             </div>
 
 
