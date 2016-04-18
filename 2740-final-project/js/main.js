@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 			$(".menu").click(function(){
 		$('.slide-out-menu').css({
-			"display":"block"
+			"left":"0"
 		})
 	})
 
@@ -23,6 +23,18 @@ $(document).ready(function(){
 		    controlNav: "thumbnails"
 		  });
 		});
+
+			$(".gallery-div img").click(function(){
+				$(this).css({
+
+				})
+			})
+
+			$('.menu-exit img').click(function(){
+				$(".slide-out-menu").css({
+					"left":"-400px"
+				})
+			})
 
 			
 

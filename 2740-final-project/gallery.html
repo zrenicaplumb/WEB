@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 
-		<meta charset="UTF-8">
-		<!-- LOAD THE LATEST VERSION OF JQUERY-->
+		 <meta charset="UTF-8">
+        <!-- LOAD THE LATEST VERSION OF JQUERY-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,11 +13,13 @@
         <link href="css/tablet.css" rel="stylesheet">
         <link href="css/desktop.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        
+
 
         
         <!--[if lt IE 9]>
-        	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
         
         
@@ -29,7 +31,7 @@
 
 	<body id="gallery-body">
 		
-		<div class="wrap">
+		<div class="gallery-wrap">
             <header>
                 <div class="hamburger-menu-wrap">
                     <img src="img/menu.png" class="menu">
@@ -42,72 +44,59 @@
 
             <div class="slide-out-menu">
                 <nav>
-                    <ul>
+                    <ul><div class="menu-exit"><img src="img/exit.png"></div>
                         <li id="index-li"><a href="index.html">Home</a></li>
                         <li id="reservations-li"><a href="reservations.html">Reservations</a></li>
                         <li id="amenities-li"><a href="amenities.html">Amenities</a></li>
                         <li><a href="rooms.html">Rooms & Rates</a></li>
-                        <li id="contact-li"><a href="contact.html">Contact us</a></li>
                         <li id="gallery-li"><a href="gallery.html">Gallery</a></li>
+                        <li id="contact-li"><a href="contact.html">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="menu-exit">
-                <img src="img/menu-exit.png">
-            </div>
+            
 
 
             <div class="home-content">
                 <div class="home-content-wrap">
-                    <h2 id="utah">Bed and Breakfast <span>Utah</span></h2>
-                    <h2 id="bob">When you're ready to come in from the great outdoors</h2>
+                    <h2 class= "gallery-h2">Gallery</h2>
+                    <p>Guests from all over the United States as well as Canada
+                    and Europe have enjoyed the hospitality of the Mayor's House
+                    B&B for over 14 years. The B&B is the perfect place for 
+                    intimate getaways for two people, and a great place for a group
+                    of friends and for families, both young and old, or for anyone
+                    wishing to find a warm and friendly atmosphere to call home.</p>
                     
                 
                 </div>
                 
-                <div class="home-about">
-                    <h2>What's so special about the mayor's house?</h2>
-                    <p>Welcome to the Mayor's House Bed and Breakfast, located in the town of Moab, in the heart of beautiful Canyonlands, Utah. The Mayor's House is one of the most comfortable and friendly B&Bs in the Moab Valley.</p>
-                    <img id="pic2" src="img/pic2.jpg">
+                <div class="gallery-div">
+                    
+                    <img src="img/gallery1.jpg">
+                    <img src="img/gallery2.jpg">
+                    <img src="img/gallery3.jpg">
+                    <img src="img/gallery4.jpg">
+                    <img src="img/gallery5.jpg">
+                    <img src="img/gallery6.jpg">
+                    <img src="img/gallery7.jpg">
+                    <img src="img/gallery8.jpg">
+                    <img src="img/gallery9.jpg">
+                    <img src="img/gallery10.jpg">
+                    <img src="img/gallery11.jpg">
+                    <img src="img/gallery12.jpg">
+                    <img src="img/gallery13.jpg">
+                    <img src="img/gallery14.jpg">
+                    <img src="img/gallery15.jpg">
+                    <img src="img/gallery16.jpg">
+                    <img src="img/gallery17.jpg">
+                    <img src="img/gallery18.jpg">
 
-                    <p>The house was built in 1980; it is a rambling 6000 square-foot home featuring a large common room, six guest rooms, and spacious decks overlooking beautiful landscaped gardens. The B&B also features a large, heated swimming pool and hot tub.</p>
-
-                    <p>Use us as your home base to explore beautiful national and state parks, spectacular canyons, rugged mountains and breathtaking vistas. Let the staff at the Mayor's House help you plan your itinerary to take advantage of the many recreational activities available here in the heart of red rock country.</p>
-
-                    <p>Come and see why so many of our guests return to see us year after year.
-                    </p>
+                    
                 </div>
 
-                <div class="background-pic"></div>
+                
 
-                <div class="home-location">
-                    <h2>Our Location</h2>
-                    <img src="img/location.jpg">
-                    <p>The Mayor's House is perfectly situated in a quiet
-                    neighborhood overlooking the town of Moab,
-                    just 4 1/2 blocks from downtown-area shopping, restaurants,
-                    museums and art galleries. The view of the world-famous
-                    Slickrock Bike Trail makes the perfect background for a relaxing
-                    afternoon by the pool. </p>
-
-                    <h2>Access To Local Attractions</h2>
-                    <img src="img/town.jpg">
-                    <p>The B&B is within a few minutes walk from Moab's central
-                    business district, but well away from the noise and congestion
-                    of downtown. The B&B is also situated close to the Slickrock Bike
-                    Trail, 10 minutes from the entrance to Arches National Park,
-                    and 30 minutes from the entrance to Canyonlands National Park.
-                    Many bike trails, hiking trails, and jeep trails are all
-                    within a short distance of the B&B. </p>
-
-                    <h2>Bring Your Toys</h2>
-                    <img src="img/toys.jpg">
-                    <p>We invite you to make use of our ample off-street parking, which can accommodate virtually all types of vehicles and trailers. A locked bike storage shed is also available.</p>
-
-                    <h2>Directions</h2>
-                    <p>Moab is approximately 4½ hours from Salt Lake City, Utah, and six hours from Denver, Colorado.</p>
-                    <div id="googleMap"></div>
-                </div>
+                
             </div>
 
 
