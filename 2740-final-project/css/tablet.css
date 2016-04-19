@@ -2,4 +2,54 @@
 	.wrap{
 		
 	}
+
+	#pic2{
+		width:50%;
+		float:right;
+		margin-left:1%;
+		margin-top:1%;
+	}
+
+	.home-about{
+		overflow: auto;
+	}
+
+	.home-location img{
+		width:50%;
+		float:right;
+	
+		margin-left:1%;
+
+
+	}
+
+	.home-location img:nth-child(even){
+
+		float:left;
+		margin-right:1%;
+		
+	}
+
+	.home-location h2{
+		clear:both;
+		padding-top:50px;
+		margin-top:0px;
+	}
+
+	.home-location p{
+		font-size:1.3em;
+		word-spacing: 1px;
+		line-height: 1.2em;
+	}
+
+	.home-about p{
+		font-size:1.3em;
+		word-spacing: 1px;
+		line-height: 1.1em;
+	}
+
+	.footer-col{
+		width:42%;
+		margin:auto
+	}
 }

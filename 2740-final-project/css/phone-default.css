@@ -169,6 +169,7 @@ nav{
 	box-shadow: 31px 3px 31px black;
 	padding-bottom:30px;
 	padding-top:40px;
+	border:10px solid #fff;
 	
 
 }
@@ -232,6 +233,7 @@ nav{
 	padding:2%;
 	box-shadow: 3px 0px 31px black;
 	padding-top:30px;
+
 	
 }
 
@@ -274,6 +276,10 @@ footer{
 	padding-right:20px;
 	clear:both;
 
+}
+
+.footer-col{
+	line-height: 1.3em;
 }
 
 .footer-col p{
@@ -490,7 +496,7 @@ background:#fff;
 .rooms-wrap{
 	color:#fff;
 	text-shadow:0 0 6px black;
-		background:url(../img/amenities-background.jpg);
+		background:url(../img/gallery-background.jpg);
 		
 		background-repeat: no-repeat;
 		background-size:cover;
@@ -589,7 +595,7 @@ textarea{
 .gallery-wrap{
 	color:#fff;
 	text-shadow:0 0 6px black;
-		background:url(../img/gallery-background.jpg);
+		background:url(../img/amenities-background.jpg);
 		
 		background-repeat: no-repeat;
 		background-size:cover;
