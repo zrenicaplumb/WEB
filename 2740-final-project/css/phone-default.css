@@ -234,6 +234,7 @@ nav{
 	box-shadow: 3px 0px 31px black;
 	padding-top:30px;
 
+
 	
 }
 
@@ -269,7 +270,7 @@ nav{
 
 footer{
 	background:#272a2d;
-	height:150px;
+	height:220px;
 	border-top:20px solid #EF3E34;
 	color:#8F9AA4;
 	padding-left:20px;
@@ -280,6 +281,7 @@ footer{
 
 .footer-col{
 	line-height: 1.3em;
+	padding-top:20px;
 }
 
 .footer-col p{
@@ -647,4 +649,24 @@ textarea{
 	width:20px;
 	cursor: pointer;
 
+}
+
+.social-icons img{
+	width:30px;
+	float:left;
+	
+
+
+
+}
+
+.social-icons{
+width:15%;
+clear:both;
+display: block;
+margin:auto;
+margin-top:30px;
+	
+	
+	
 }

@@ -48,8 +48,45 @@
 		line-height: 1.1em;
 	}
 
+
+
 	.footer-col{
 		width:42%;
 		margin:auto
+
+	}
+
+	.background-pic{
+		height:500px;
+	}
+
+	.slide-out-menu{
+		width:300px;
+	}
+
+	.flexslider{
+		width:80%;
+		margin:auto;
+
+	}
+
+	.cancellation-policy-div{
+		text-align: center;
+	}
+
+
+
+	.rules-box{
+		width:47%;
+		display: inline-block;
+		margin: 1%;
+
+	}
+
+	.rules{
+		padding-top:30px;
+
+
+		
 	}
 }
