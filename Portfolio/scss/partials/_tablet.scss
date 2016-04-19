@@ -1,13 +1,12 @@
 body{
 	
-
-}
-
+	
 .wrap{
 	.content{
 		.greeting-text{
 			
 			p{
+			font-size: .85em;
 				span{
 					
 				}
@@ -27,19 +26,34 @@ body{
 	}
 
 	.about-div{
+
 		p{
 			width:90%;
 		}
 	}
 
 	.bottom-div{
+		padding-left:0px;
+		padding-right:0px;
+
 		.contact-boxes{
+
 			input{
-				
+			
 			}
 		}
 	}
 }
+.greeting-text{
+	p{
+		font-size: .95em;
+	}
+}
+}
+
+
+
+
 
 
 

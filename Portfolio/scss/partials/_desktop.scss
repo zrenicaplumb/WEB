@@ -50,7 +50,7 @@ body{
 						padding:10px;
 						
 						&:hover{
-							transition: color .2s;
+							transition: color .35s;
 							color:#D5FFA1;
 							padding:10px;
 							
@@ -129,6 +129,7 @@ body{
 			clear:both;
 			margin-top:190px;
 			z-index: 10000;
+
 			
 
 			h2{
@@ -143,7 +144,7 @@ body{
 				color:#fff;
 				font-size:1.5em;
 				
-				
+				text-shadow:0 0 6px black;
 				width:80%;
 				word-spacing: 2px;
 				margin:auto;
