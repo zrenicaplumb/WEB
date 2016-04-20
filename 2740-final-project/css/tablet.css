@@ -89,4 +89,85 @@
 
 		
 	}
+
+	.amenities-about img{
+	border: 1px solid black;
+	margin-bottom:5px;
+	width:50%;
+	float:left;
+	margin-right:10px;
+	
+	
+
+}
+
+.amenities-about h2{
+
+}
+
+#float-right{
+	float:right;
+}
+
+
+.amenities-div-clear{
+	clear:both;
+	
+	margin-top:10px;
+	margin-bottom:10px;
+	
+}
+
+.amenities-div-clear p{
+	font-size:1.3em;
+}
+
+.yo{
+	width:45%;
+	float:left;
+	margin:2.5%;
+}
+
+.yo2{
+	width:80%;
+	float:none;
+	margin:auto;
+	padding-top:40px;
+}
+
+.rooms-about img{
+	width:80%;
+	margin:auto;
+	display: block;
+}
+
+.rooms-about figcaption{
+	text-align: left;
+	width:80%;
+	margin:auto;
+	margin-top:10px;
+}
+
+.home-about p{
+	font-size: 1em;
+}
+
+.rooms-about > p{
+	width:80%;
+	margin:auto;
+}
+
+.yo3{
+	padding-bottom:20px;
+}
+
+.gallery-div{
+	float:left;
+	
+}
+.gallery-div img{
+	width:30%;
+	float:left;
+}
+
 }

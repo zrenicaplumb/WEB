@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
 
-			$(".menu").click(function(){
+			$(".hamburger-menu-wrap").click(function(){
 		$('.slide-out-menu').css({
 			"left":"0"
 		})
@@ -30,14 +30,23 @@ $(document).ready(function(){
 				})
 			})
 
-			$('.menu-exit img').click(function(){
+			$('.menu-exit').click(function(){
 				$(".slide-out-menu").css({
 					"left":"-400px"
 				})
 			})
 
 			
-
+			 var gallery = new $.ThumbnailGallery($('#gallery'), {
+        thumbImages: '_/img/thumbs/thumb',
+        smallImages: '_/img/small/image',
+        largeImages: '_/img/large/image',
+        count: 10,
+        thumbImageType: 'jpg',
+        imageType: 'jpg',
+        breakpoint: 600,
+        shadowStrength: 1
+    });
 
 
 

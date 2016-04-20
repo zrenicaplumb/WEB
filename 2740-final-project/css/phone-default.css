@@ -57,6 +57,7 @@ header{
 	padding-left:18px;
 	padding-right:18px;
 	height:100%;
+	cursor: pointer;
 }
 .menu{
 	width:40px;
@@ -97,13 +98,18 @@ nav ul li:hover{
 	border-left:6px solid #EF3E34;
 }
 
-nav ul li a{
+nav ul a{
+	text-decoration: none;
+
+	
+}
+
+nav ul a li{
 	text-decoration: none;
 	color:#fff;
 	padding-left:4px;
 	font-size: 1.1em;
-
-	
+	border:none;
 }
 
 nav{
@@ -165,7 +171,7 @@ nav{
 	word-spacing: 1.8px;
 	color:#fff;
 	text-shadow:none;
-	font-size: 1.1em;
+	font-size: .92em;
 	box-shadow: 31px 3px 31px black;
 	padding-bottom:30px;
 	padding-top:40px;
@@ -283,6 +289,23 @@ footer{
 	line-height: 1.3em;
 	padding-top:20px;
 }
+
+
+.social-icons img{
+	width:50px;
+	padding:8px;
+	margin-top:10px;
+	
+
+
+
+}
+
+.social-icons{
+text-align: center;
+	
+}
+
 
 .footer-col p{
 	text-align: center;
@@ -457,7 +480,25 @@ background:#fff;
 
 .amenities-about img{
 	border: 1px solid black;
-	margin-bottom:5px;
+	
+	
+	
+
+}
+
+.amenities-div-clear img{
+	width:100%;
+}
+
+.amenities-div-clear{
+	clear:both;
+	
+	
+	float:left;
+}
+
+.amenities-div-clear p{
+	margin-bottom:30px;
 }
 
 
@@ -642,6 +683,7 @@ textarea{
     border:1px solid #272a2d;
     padding:25px;
     border-left:none;
+    cursor: pointer;
 
 
 }
@@ -651,22 +693,20 @@ textarea{
 
 }
 
-.social-icons img{
-	width:30px;
-	float:left;
-	
-
-
-
+.rooms-about figcaption{
+	text-align: center;
 }
 
-.social-icons{
-width:15%;
-clear:both;
-display: block;
-margin:auto;
-margin-top:30px;
-	
-	
-	
+.rooms-about figcaption p{
+	text-align: left;
 }
+
+.rooms-about figcaption h2{
+	font-size:1.6em;
+}
+
+
+.home-about p{
+	font-size: 1.3em;
+}
+
