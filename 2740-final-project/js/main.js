@@ -37,16 +37,12 @@ $(document).ready(function(){
 			})
 
 			
-			 var gallery = new $.ThumbnailGallery($('#gallery'), {
-        thumbImages: '_/img/thumbs/thumb',
-        smallImages: '_/img/small/image',
-        largeImages: '_/img/large/image',
-        count: 10,
-        thumbImageType: 'jpg',
-        imageType: 'jpg',
-        breakpoint: 600,
-        shadowStrength: 1
-    });
+			
+
+			 $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
 
 
 

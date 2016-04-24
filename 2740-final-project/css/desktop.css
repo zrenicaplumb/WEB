@@ -1,3 +1,37 @@
 @media only screen and (min-width: 1140px){
-	
+	.slide-out-menu{
+		width:334px;
+	}
+
+	nav ul a li{
+		font-size:1.2em;
+	}
+
+	.form-div{
+		width:60%;
+	}
+
+	.desktop-intro-text{
+		font-size: 4.8em;
+	}
+
+	#utah{
+		font-size:4.5em;
+	}
+
+	.reservations-content-wrap h2{
+		font-size:4.8em;
+	}
+
+	.amenities-content-wrap h2{
+		font-size:4.8em;
+	}
+
+	.gallery-h2{
+		font-size: 4.8em;
+	}
+
+	#googleMap{
+		width:60%;
+	}
 }
