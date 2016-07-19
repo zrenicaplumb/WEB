@@ -2,6 +2,7 @@
 *{
 	box-sizing: border-box;
 }
+
 .clearfix{
 	display: table;
 	content: "";
@@ -31,6 +32,55 @@ body{
 	z-index: 100;
 	position: relative;
 }
+.mobile-menu i{
+	color:#fff;
+}
+.mobile-menu{
+	background-color: #6A6C6E;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    position: fixed;
+    display: none;
+        top: 8px;
+    left: 8px;
+    cursor: pointer;
+}
+.sidebar{
+	background-color:#fff;
+	width:235px;
+	position: fixed;
+	top:0;
+	left: -236px;
+	height: 100%;
+	box-shadow: 1px 1px 50px rgba(0,0,0,0.3);
+	transition: 0.5s left;
+}
+.open{
+	left:0px;
+}
+.sidebar ul{
+	    padding: 15px;
+
+}
+.sidebar ul li{
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.sidebar ul li:nth-child(3){
+	border:none;
+}
+.sidebar-button{
+	background-color: #383B43;
+    padding: 15px 40px;
+    margin: auto;
+    width: 200px;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+
+}
 header{
 	background:transparent;
 	padding:35px;
@@ -38,7 +88,7 @@ header{
 header h1{
 	color:#fff;
 	display: inline-block;
-	font
+	
 }
 header nav {
 	display: inline-block;
@@ -337,7 +387,12 @@ footer .box{
 }
 
 @media only screen and (max-width: 960px){
-
+.mobile-menu{
+	display: block;
+}
+header h1, header nav{
+	visibility: hidden;
+}
 .landing-text h1{
 	font-size: 3em;
    
